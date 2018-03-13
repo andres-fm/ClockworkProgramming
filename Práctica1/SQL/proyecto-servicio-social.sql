@@ -11,7 +11,7 @@ CREATE TABLE usuario(
 );
 
 CREATE TABLE pregunta (
-	 id_pregunta        int NOT NULL,
+	  id_pregunta        int NOT NULL,
     id                 int NOT NULL,
     pregunta           varchar(150) NOT NULL
     contenido          varchar(1000) NOT NULL,
@@ -24,8 +24,8 @@ CREATE TABLE pregunta (
 );
 
 CREATE TABLE respuesta (
-	 id_respuesta       int NOT NULL,
-	 id_pregunta        int NOT NULL,
+	  id_respuesta       int NOT NULL,
+	  id_pregunta        int NOT NULL,
     usuario_respuesta  int NOT NULL,
     contenido          varchar(1000) NOT NULL,
     fecha_publicacion  date NOT NULL,
