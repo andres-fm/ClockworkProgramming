@@ -23,10 +23,10 @@ CREATE TABLE pregunta (
     FOREIGN KEY (id_usuario) REFERENCES usuario(email)
 );
 
+
 CREATE TABLE respuesta (
-	 id_respuesta       int NOT NULL,
-	 id_pregunta        int NOT NULL,
-    usuario_respuesta  int NOT NULL,
+	id_respuesta       int NOT NULL,
+	id_pregunta        int NOT NULL,
     id_usuario         varchar(50) NOT NULL,
     contenido          varchar(1000) NOT NULL,
     fecha_publicacion  date NOT NULL,
@@ -34,5 +34,5 @@ CREATE TABLE respuesta (
     dislikes           int NOT NULL,
     CONSTRAINT llave_respuesta PRIMARY KEY(id_respuesta),
     FOREIGN KEY (id_pregunta) REFERENCES pregunta(id_pregunta),
-    FOREIGN KEY (id_usuario) REFERENCES usuario(email),    
+    FOREIGN KEY (id_usuario) REFERENCES usuario(email),
 );
