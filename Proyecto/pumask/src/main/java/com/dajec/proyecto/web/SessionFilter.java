@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.miguel.proyecto.web;
+package com.dajec.proyecto.web;
 
 import java.io.IOException;
 import javax.servlet.Filter;

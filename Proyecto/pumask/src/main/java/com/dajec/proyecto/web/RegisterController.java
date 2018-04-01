@@ -1,4 +1,4 @@
-package com.miguel.proyecto.web;
+package com.dajec.proyecto.web;
 
 import java.util.Locale;
 

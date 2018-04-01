@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.miguel.proyecto.model;
+package com.dajec.proyecto.model;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.miguel.proyecto.web;
+package com.dajec.proyecto.web;
 
-import com.miguel.proyecto.model.EntityProvider;
-import com.miguel.proyecto.model.Login;
-import com.miguel.proyecto.model.LoginJpaController;
+import com.dajec.proyecto.model.EntityProvider;
+import com.dajec.proyecto.model.Login;
+import com.dajec.proyecto.model.LoginJpaController;
 import java.util.Locale;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;

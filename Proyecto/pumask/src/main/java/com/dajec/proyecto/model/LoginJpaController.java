@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.miguel.proyecto.model;
+package com.dajec.proyecto.model;
 
-import com.miguel.proyecto.model.exceptions.NonexistentEntityException;
+import com.dajec.proyecto.model.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.EntityManager;

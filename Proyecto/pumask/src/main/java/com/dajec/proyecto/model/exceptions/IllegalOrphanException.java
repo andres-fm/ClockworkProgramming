@@ -1,4 +1,4 @@
-package com.miguel.proyecto.model.exceptions;
+package com.dajec.proyecto.model.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;

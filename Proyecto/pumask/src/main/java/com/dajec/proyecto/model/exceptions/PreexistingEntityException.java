@@ -1,4 +1,4 @@
-package com.miguel.proyecto.model.exceptions;
+package com.dajec.proyecto.model.exceptions;
 
 public class PreexistingEntityException extends Exception {
     public PreexistingEntityException(String message, Throwable cause) {
