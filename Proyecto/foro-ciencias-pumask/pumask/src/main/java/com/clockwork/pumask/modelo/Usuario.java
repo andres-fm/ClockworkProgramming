@@ -15,6 +15,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -37,6 +39,17 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Usuario.findByContrasenia", query = "SELECT u FROM Usuario u WHERE u.contrasenia = :contrasenia")
     , @NamedQuery(name = "Usuario.findByUrlAvatar", query = "SELECT u FROM Usuario u WHERE u.urlAvatar = :urlAvatar")
     , @NamedQuery(name = "Usuario.findByFechaCreacion", query = "SELECT u FROM Usuario u WHERE u.fechaCreacion = :fechaCreacion")})
+@NamedNativeQueries(value = {
+    @NamedNativeQuery(
+            name = "tieneAcceso",
+            query = "select loginBase(?, ?)"
+    )
+    , @NamedNativeQuery(
+            name = "findByCorreoAndPassword",
+            query = "select correo, nombre_usuario from usuario where correo = ?1 and contrasenia = crypt(?2, contrasenia)",
+            resultClass = Usuario.class
+    )
+})
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;

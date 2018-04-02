@@ -299,5 +299,25 @@ public class UsuarioJpaController implements Serializable {
             em.close();
         }
     }
+
+
+    public boolean puedeAcceder(String correo, String contrasenia) {
+        EntityManager em = getEntityManager();
+        Query q = em.createNamedQuery("tieneAcceso")
+                .setParameter(1, correo)
+                .setParameter(2, contrasenia);
+        return (Boolean) q.getSingleResult();
+    }
+
+    public Usuario findLogin(String correo, String contrasenia) {
+        EntityManager em = getEntityManager();
+        Query q = em.createNamedQuery("findByCorreoAndPassword")
+                .setParameter(1, correo)
+                .setParameter(2, contrasenia);
+        if (q.getResultList().isEmpty()) {
+            return null;
+        }
+        return (Usuario) q.getSingleResult();
+    }
     
 }

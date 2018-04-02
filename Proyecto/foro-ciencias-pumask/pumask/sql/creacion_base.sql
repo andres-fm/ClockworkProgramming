@@ -71,5 +71,12 @@ create trigger cifra
 before insert on usuario
 for each row execute procedure usuarioHash();
 
+create or replace function loginBase(correo_usuario text, password text) returns boolean as $$
+  select exists(select 1
+                  from usuario
+                 where correo = correo_usuario and
+                       contrasenia = crypt(password, contrasenia));
+$$ language sql stable;
+
 
 insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'no sirve este url', '2018-03-31');

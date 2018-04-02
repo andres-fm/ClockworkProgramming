@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.clockwork.pumask.model;
+package com.clockwork.pumask.modelo;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -21,7 +21,7 @@ public class EntityProvider {
 
     public static EntityManagerFactory provider() {
         if (_emf == null) {
-            _emf = Persistence.createEntityManagerFactory("PersistenceUnit");
+            _emf = Persistence.createEntityManagerFactory("com.clockwork_pumask_war_1.0-SNAPSHOTPU");
         }
         return _emf;
     }
