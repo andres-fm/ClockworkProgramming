@@ -10,6 +10,14 @@
 
     <h1>Formulario de registro</h1> <br/>
 
+<p:dataTable id="sorting" var="car"
+  value="#{agregacionPregunta.obtenerPreguntasCarreras()}">
+<p:column headerText="Year" 
+sortBy="#{pregunta.contenido}">
+    <h:outputText value="#{pregunta.carrera}" />
+  </p:column>
+</p:dataTable>
+
 
 <p:tabView id="tabView">
   <p:tab title="Volkswagen CC">

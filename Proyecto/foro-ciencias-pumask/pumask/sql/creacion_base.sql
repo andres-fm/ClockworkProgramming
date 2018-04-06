@@ -1,3 +1,5 @@
+begin;
+
 
 DROP TABLE respuesta;
 DROP TABLE administrador;
@@ -23,7 +25,7 @@ CREATE TABLE administrador (
 
 
 CREATE TABLE pregunta (
-	id_pregunta        int NOT NULL,
+	id_pregunta        Serial,
     correo_usuario     text NOT NULL,
     categoria          varchar(50) NOT NULL,
     contenido          varchar(50) NOT NULL,
@@ -36,8 +38,8 @@ CREATE TABLE pregunta (
 
 
 CREATE TABLE respuesta (
-	id_respuesta       int NOT NULL,
-	id_pregunta        int NOT NULL,
+	id_respuesta       Serial,
+	id_pregunta        integer,
     usuario_correo     text NOT NULL,
     contenido          varchar(1000) NOT NULL,
     fecha_publicacion  date NOT NULL,
@@ -80,3 +82,8 @@ $$ language sql stable;
 
 
 insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'no sirve este url', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'actuaria', '2018-03-31');
+
+
+
+commit;

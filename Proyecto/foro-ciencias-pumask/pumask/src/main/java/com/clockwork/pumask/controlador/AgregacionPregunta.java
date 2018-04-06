@@ -7,12 +7,15 @@ package com.clockwork.pumask.controlador;
 
 import com.clockwork.pumask.modelo.EntityProvider;
 import com.clockwork.pumask.modelo.Usuario;
-import com.clockwork.pumask.modelo.UsuarioJpaController;
+import com.clockwork.pumask.modelo.Pregunta;
+import com.clockwork.pumask.modelo.PreguntaJpaController;
 import java.util.Locale;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManagerFactory;
+import java.util.List;
+import java.util.Date;
 
 import static javax.faces.context.FacesContext.getCurrentInstance;
 
@@ -22,38 +25,43 @@ import static javax.faces.context.FacesContext.getCurrentInstance;
  */
 @ManagedBean
 @SessionScoped
-public class LoginController {
+public class AgregacionPregunta {
 
     private EntityManagerFactory emf;
-    private UsuarioJpaController jpaController;
+    private PreguntaJpaController jpaController;
     //private Usuario usuario;
-	private String correo;
-	private String contrasenia;
+	private Pregunta pregunta;
 
-    public LoginController() {
+    public AgregacionPregunta() {
         FacesContext.getCurrentInstance().getViewRoot().setLocale(new Locale("es-Mx"));
         emf = EntityProvider.provider();
-        jpaController = new UsuarioJpaController(emf);
-        //usuario = new Usuario();
-        correo = "";
-        contrasenia = "";
+        jpaController = new PreguntaJpaController(emf);
+        pregunta = new Pregunta();
     }
 
-	public String getCorreo() {
-		return correo;
+	public boolean validaPregunta() {
+		return !(pregunta.getContenido() == null);
 	}
 
-	public void setCorreo(String correo) {
-		this.correo = correo;
+	public String agregaPregunta() {
+		pregunta.setFechaCreacion(new Date());
+		try {
+			jpaController.create(pregunta);
+			return "Pregunta publicada exitosamente";
+		}catch (Exception e) {
+			return "Ocurrio un error al intentar publicar la pregunta, por favor intente mas tarde";
+		}
 	}
 
-	public String getContrasenia() {
-		return contrasenia;
+	public List<Pregunta> obtenerPreguntasCarreras() {
+		return jpaController.obtenPreguntasCarrera("actuaria");
 	}
 
-	public void setContrasenia(String contrasenia) {
-		this.contrasenia = contrasenia;
+
+	public Pregunta getPregunta() {
+		return pregunta;
 	}
+
 /*
     public Usuario getusuario() {
         return usuario;
@@ -63,6 +71,9 @@ public class LoginController {
         this.usuario = usuario;
     }
     */
+
+
+/*
 
     public String canLogin() {
         Usuario l = jpaController.findLogin(correo, contrasenia);
@@ -80,5 +91,5 @@ public class LoginController {
         context.getExternalContext().invalidateSession();
         return "index?faces-redirect=true";
     }
-
+*/
 }

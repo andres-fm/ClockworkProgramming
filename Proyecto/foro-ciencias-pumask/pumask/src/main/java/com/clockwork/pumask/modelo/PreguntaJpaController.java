@@ -233,4 +233,12 @@ public class PreguntaJpaController implements Serializable {
         }
     }
     
+    public List<Pregunta> obtenPreguntasCarrera(String carrera) {
+    	EntityManager em = getEntityManager();
+        Query q = em.createNamedQuery("Pregunta.findByCarrera")
+                .setParameter("carrera", "actuaria");
+        return (List<Pregunta>) q.getResultList();
+    }
+    
+    
 }
