@@ -1,71 +1,40 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+  <h:head>
+    <title>Subforos</title>
+  </h:head>
+  <h:body>
 
-<html xmlns = "http://www.w3.org/1999/xhtml"   
-   xmlns:h = "http://java.sun.com/jsf/html"
-   xmlns:ui = "http://java.sun.com/jsf/facelets">
-   
-
-    <h:body> 
-      <!-- Body del html -->
-      <ui:composition template = "/WEB-INF/facelets/templates/layout.xhtml">
-      <ui:define name = "content">
-      <div class="container">
-        <h1>Ciencias de la Computacion</h1>
-
-      <!-- Boton para agregar preguntas -->
-        <div class="derecha">
-          <a class="waves-effect waves-light btn">Agregar Pregunta</a>
-        </div>
+    <h1>Formulario de registro</h1> <br/>
 
 
-      <!-- Listado de preguntas -->
-        <ul class="preguntas-foro">
-          <li class="pregunta">
-          <a href="#">
-            <h4> Primer Pregunta </h4>
-            <p> Respuesta 1 <br></br>
-                Respuesta 2 <br></br>
-                 Respuesta 3 </p>
-          </a>
-          </li>
-          <li class="pregunta">
-          <a href="#">
-            <h4> Segunda Pregunta </h4>
-            <p> Respuesta 1 <br></br>
-                Respuesta 2 <br></br>
-                Respuesta 3 </p>
-          </a>
-          </li>
-          <li class="pregunta">
-          <a href="#">
-            <h4> Tercer Pregunta </h4>
-            <p> Respuesta 1 <br></br>
-                Respuesta 2 <br></br>
-                Respuesta 3 </p>
-          </a>
-          </li>
-        </ul>
+<p:tabView id="tabView">
+  <p:tab title="Volkswagen CC">
+    <p:panel id="panelWithMenu" header="PrimeFaces"
+  footer="The Cookbook" widgetVar="panel" closable="true"
+  toggleable="true">
+  <h:outputText value="Open Source Primefaces is the leading
+    JSF Component Suite in the industry, which is adopted widely 
+    and being used in production ready projects around the 
+    globe." />
+  
+</p:panel>
+  </p:tab>
+  <p:tab title="Volkswagen Golf">
+    <h:panelGrid columns="2" cellpadding="5">
+      <h:graphicImage library="images"
+        name="autocomplete/Golf.png" />
+      <h:outputText value="The Volkswagen Golf is a small 
+        family car manufactured by Volkswagen since 1974 and 
+        marketed worldwide across six generations, in various
+        body configurations and under various nameplates" />
+    </h:panelGrid>
+  </p:tab>
+</p:tabView>
 
-      <!-- Enumeracion de las paginas -->
-       <div class="center">
-        <div class="pagination">
-          <a href="#">&laquo;</a>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#">&raquo;</a>
-        </div>
-       </div>
-
-
-      </div>
-      </ui:define>
-      </ui:composition>
-   
-   </h:body>
+  </h:body>
 </html>
+
