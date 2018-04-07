@@ -31,6 +31,16 @@
     <welcome-file>index.xhtml</welcome-file>
   </welcome-file-list>
 
+  <!-- navigation rules -->
+  <navigation-rule>
+		<from-view-id>mi_perfil.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>index</from-outcome>
+			<to-view-id>index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+  </navigation-rule>
+
   <!-- web fonts -->
   <mime-mapping>
     <extension>eot</extension>
