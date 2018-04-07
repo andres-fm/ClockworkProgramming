@@ -67,7 +67,7 @@ public class ControladorSesion {
     public String cerrarSesion() {
         FacesContext context = getCurrentInstance();
         context.getExternalContext().invalidateSession();
-        return "index?faces-redirect=true";
+        return "/index.xhtml?faces-redirect=true";
     }
 
     public boolean estaEnSesion() {
