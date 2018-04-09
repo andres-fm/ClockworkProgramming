@@ -76,10 +76,21 @@ public class ControladorSesion {
         return l != null;
     }
 
+    public boolean mostrarBotones() {
+	String context = getCurrentInstance().getViewRoot().getViewId();
+  	return !context.equals("/forma_iniciar_sesion.xhtml") && !context.equals("/registro.xhtml");	
+    }
+
     public Usuario getUsuario() {
         FacesContext context = getCurrentInstance();
         return (Usuario) context.getExternalContext().getSessionMap().get("usuario");
     }
+
+    public String formaIniciarSesion() {
+	return "/forma_iniciar_sesion.xhtml?faces-redirect=true";
+    }
+
+
 
 
 }
