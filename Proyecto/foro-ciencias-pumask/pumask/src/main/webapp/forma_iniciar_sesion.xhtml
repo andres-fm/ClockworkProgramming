@@ -1,19 +1,55 @@
 <ui:composition
         template="/WEB-INF/facelets/templates/layout.xhtml"
         xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:ui="http://java.sun.com/jsf/facelets">
-  
-    <ui:define name="content">
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">Iniciar sesion</h1>
-        <p>
-            aqui iniciamos sesion
-        </p>
-      </div>
-    </div>
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+	<ui:define name="content">
+	<br>
+	</br>
+	<br>
+	</br>
+	<html lang= "en">
+	
+		<meta charset = "UTF-8"></meta>
+		<link href="https://fonts.googleapis.com/css?family=Lato: 400,900" rel="stylesheet"></link>
+		<Link rel="stylesheet" href="css/inicio.css"></Link>
+		<title>login</title>
+		
+		<body>
+			<div class="login_container">
+			<div class="login_top">
+			<img class="login_img" src="imagenes/usuario-sin-foto.png" alt=""></img>
+			<h2 class="login_title">Iniciar <span>sesión</span></h2>
+		</div>
+
+		<h:form class="login_form">
+			<h:inputText value="#{controladorSesion.correo}"
+                                     required="true" id="Username"
+                                     size="15" class="form-control mr-sm-2"
+                                   a:placeholder="Correo Electrónico"/>
+
+		        <h:inputSecret value="#{controladorSesion.contrasenia}"
+	                               required="true" id="Password"
+		                       class="form-control mr-sm-2"
+		                     a:placeholder="Contraseña"/>
+
+	                <h:commandButton action="#{controladorSesion.iniciarSesion()}"
+                                         value="Inicia Sesión"
+                                         class="btn btn-outline-success my-2 my-sm-0"/>
+                        <a class="form_recover" href="">Olvidaste la contraseña?</a>
+		</h:form>
+		</div>
+	</body>
+	</html>
 
   </ui:define>
   
 
 </ui:composition>
+
+
+

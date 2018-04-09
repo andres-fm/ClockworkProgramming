@@ -1,0 +1,57 @@
+<ui:composition
+        template="/WEB-INF/facelets/templates/layout.xhtml"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:define name="content">
+	<br>
+	</br>
+	<br>
+	</br>
+	<html lang= "en">
+	
+		<meta charset = "UTF-8"></meta>
+		<link href="https://fonts.googleapis.com/css?family=Lato: 400,900" rel="stylesheet"></link>
+		<Link rel="stylesheet" href="css/inicio.css"></Link>
+		<title>login</title>
+		
+		<body>
+			<div class="login_container">
+			<div class="login_top">
+			<img class="login_img" src="imagenes/usuario-sin-foto.png" alt=""></img>
+			<h2 class="login_title">Iniciar <span>sesión</span></h2>
+		</div>
+
+		<form class="login_form">
+			<input type="email" placeholder=" correo electrónico" required="autofocus"></input>
+			<input type="password" placeholder= "contraseña" required="autofocus"></input>
+			<input class="btn_submit" type="submit" value="INICIAR"></input>
+			<a class="form_recover" href="">Olvidaste la contraseña?</a>
+			</form>
+		</div>
+	</body>
+	</html>
+
+  </ui:define>
+  
+
+</ui:composition>
+
+
+
+
+
+
+<h:inputText value="#{ControladorSesion.correo}"
+                           required="true" id="Username"
+                           size="15" class="form-control mr-sm-2"
+                           a:placeholder="Correo Electrónico"/>
+
+              <h:inputSecret value="#{ControladorSesion.contrasenia}"
+                             required="true" id="Password"
+                             class="form-control mr-sm-2"
+                             a:placeholder="Contraseña"/>
+
+              <h:commandButton action="#{ControladorSesion.iniciarSesion()}"
+                               value="Inicia Sesión"
+                               class="btn btn-outline-success my-2 my-sm-0"/>

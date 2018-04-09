@@ -26,8 +26,8 @@ public class ControladorSesion {
 
     private EntityManagerFactory emf;
     private UsuarioJpaController jpaController;
-	private String correo;
-	private String contrasenia;
+    private String correo;
+    private String contrasenia;
 
     public ControladorSesion() {
         FacesContext.getCurrentInstance().getViewRoot().setLocale(new Locale("es-Mx"));
@@ -59,9 +59,9 @@ public class ControladorSesion {
         if (logged) {
             FacesContext context = getCurrentInstance();
             context.getExternalContext().getSessionMap().put("usuario", l);
-            return "index?faces-redirect=true";
+            return "/index?faces-redirect=true";
         }
-        return "index?faces-redirect=true";
+        return "/index?faces-redirect=true";
     }
 
     public String cerrarSesion() {
