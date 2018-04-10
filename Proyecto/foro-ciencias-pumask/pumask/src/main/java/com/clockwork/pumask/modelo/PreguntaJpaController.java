@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -238,6 +238,13 @@ public class PreguntaJpaController implements Serializable {
         Query q = em.createNamedQuery("Pregunta.findByCarrera")
                 .setParameter("carrera", "actuaria");
         return (List<Pregunta>) q.getResultList();
+    }
+
+    public List<Pregunta> obtenPreguntasUsuario(String correo) {
+        EntityManager em = getEntityManager();
+        Query q = em.createNamedQuery("Pregunta.findByUser")
+            .setParameter("correo", correo);
+        return (List<Pregunta>)q.getResultList();
     }
     
     

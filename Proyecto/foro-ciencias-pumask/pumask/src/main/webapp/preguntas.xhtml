@@ -1,0 +1,56 @@
+<ui:composition
+    template="/WEB-INF/facelets/templates/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">  
+  <ui:define name="content">
+    <h:head>
+      <title>Preguntas - </title>
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+      <!-- Custom styles for this template -->
+      <link href="css/album.css" rel="stylesheet"></link>
+    </h:head>
+    <h:body>
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Preguntas</h1>
+        </div>
+      </section>
+      <div class="container">
+        <ul class="list-group">
+          <c:forEach items="${eliminacionPregunta.obtenPreguntasUsuario(controladorSesion.usuario.correo)}" var="pregunta">
+            <li class="list-group-item">
+            <div class="row">
+              <div class="col-8">
+                <p><b>${pregunta.contenido}</b></p>
+              </div>
+              <div class="col-2">
+                <p style="font-size:12px;color:gray;text-align:end;">${controladorSesion.usuario.nombreUsuario}</p>
+              </div>
+              <div class="col-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p>${pregunta.detalle}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div style="text-align:end;margin-bottom:5%">
+                  <button class="btn btn-danger" action="{eliminacionPregunta.eliminaPregunta($pregunta)}">Eliminar pregunta</button>
+                </div>
+              </div>
+            </li>
+          </c:forEach>
+        </ul>
+      </div>
+    </h:body>      
+  </ui:define>
+</ui:composition>
