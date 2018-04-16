@@ -82,8 +82,29 @@ $$ language sql stable;
 
 
 insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'no sirve este url', '2018-03-31');
-insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'actuaria', '2018-03-31');
 
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 1', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 2', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 3', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 4', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 5', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 6', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 7', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 8', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 9', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 10', 'fisica', '2018-03-31');
+
+
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 1', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 2', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 3', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 4', 'actuaria', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 5', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 6', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 7', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 8', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 9', 'fisica', '2018-03-31');
+insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'servicio social', 'pregunta 10', 'fisica', '2018-03-31');
 
 
 commit;

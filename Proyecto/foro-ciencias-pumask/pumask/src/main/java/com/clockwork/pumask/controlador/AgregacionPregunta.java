@@ -21,7 +21,7 @@ import static javax.faces.context.FacesContext.getCurrentInstance;
 
 /**
  *
- * @author miguel
+ * @author dimitri
  */
 @ManagedBean
 @SessionScoped
@@ -37,27 +37,83 @@ public class AgregacionPregunta {
         emf = EntityProvider.provider();
         jpaController = new PreguntaJpaController(emf);
         pregunta = new Pregunta();
+        pregunta.setCategoria("oscar");
+        pregunta.setCarrera("actuaria");
     }
 
 	public boolean validaPregunta() {
 		return !(pregunta.getContenido() == null);
 	}
 
-	public String agregaPregunta() {
+	public void agregaPregunta() {
+		System.out.println("Hola inicial");
 		pregunta.setFechaCreacion(new Date());
+		String carrera = obtenerPaginaActual();
+		pregunta.setCarrera(carrera);
+		pregunta.setIdPregunta(100);
+		System.out.println("Hola afuera dos");
+		FacesContext context = getCurrentInstance();
+        pregunta.setCorreoUsuario((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
+        //pregunta.setIdPregunta(2);
+		//pregunta.setsetCorreoUsuario(null);
+		System.out.println("Hola afuera");
 		try {
 			jpaController.create(pregunta);
-			return "Pregunta publicada exitosamente";
+			System.out.println("Hola adentro");
 		}catch (Exception e) {
-			return "Ocurrio un error al intentar publicar la pregunta, por favor intente mas tarde";
 		}
 	}
 
-	public List<Pregunta> obtenerPreguntasCarreras() {
-		return jpaController.obtenPreguntasCarrera("actuaria");
+
+	public String obtenerPaginaActual() {
+		String context = getCurrentInstance().getViewRoot().getViewId();
+		String carrera = "";
+		if (context.equals("/carreras/actuaria.xhtml"))
+			carrera = "actuaria";
+		else if(context.equals("/carreras/biologia.xhtml"))
+			carrera = "biología";
+		else if(context.equals("/carreras/ciencias_ambientales.jsp"))
+			carrera = "ciencias ambientales";
+		else if(context.equals("/carreras/ciencias_de_la_computacion.xhtml"))
+			carrera = "ciencias de la computación";
+		else if(context.equals("/carreras/ciencias_de_la_tierra.xhtml"))
+			carrera = "ciencias de la tierra";
+		else if(context.equals("/carreras/fisica.xhtml"))
+			carrera = "fisíca";
+		else if(context.equals("/carreras/fisica_biomedica.xhtml"))
+			carrera = "física biomédica";
+		else if(context.equals("/carreras/general.xhtml"))
+			carrera = "general";
+		else if(context.equals("/carreras/manejo_sustentable_de_zonas_costeras.xhtml"))
+			carrera = "manejo sustentable de zonas costeras";
+		else if(context.equals("/carreras/matematicas.xhtml"))
+			carrera = "matematicas";
+		else if(context.equals("/carreras/matematicas_aplicadas.xhtml"))
+			carrera = "matematicas aplicadas";
+		else if(context.equals("/carreras/neurociencias.xhtml"))
+			carrera = "neurociencias";
+		return carrera;
 	}
 
 
+	public List<Pregunta> obtenerPreguntasTitulacion() {
+		return obtenerPreguntas("titulacion");
+	}
+
+
+	public List<Pregunta> obtenerPreguntasServicioSocial() {
+		return obtenerPreguntas("servicio social");
+	}
+
+
+	public List<Pregunta> obtenerPreguntas(String categoria) { 	
+		return jpaController.obtenPreguntasCC(obtenerPaginaActual(), categoria);
+	}
+
+	/**
+	 * Regresa la pregunta asociada al controlador
+	 * @return Pregunta La pregunta asociada al controlador
+	 **/
 	public Pregunta getPregunta() {
 		return pregunta;
 	}

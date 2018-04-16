@@ -11,7 +11,7 @@
   <ui:define name="content">
 
   <h:head>
-    <title>Subforo Actuaría</title>
+    <title>Subforo Biología</title>
   </h:head>
   <h:body>
 
