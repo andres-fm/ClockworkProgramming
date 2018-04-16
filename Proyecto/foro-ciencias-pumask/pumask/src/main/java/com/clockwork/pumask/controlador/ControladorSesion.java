@@ -90,6 +90,13 @@ public class ControladorSesion {
 	return "/forma_iniciar_sesion.xhtml?faces-redirect=true";
     }
 
+    public String ajustes() {
+	return "/secured/ajustes.xhtml?faces-redirect=true";
+    }
+
+    public String miPerfil() {
+	return "/secured/mi_perfil.xhtml?faces-redirect=true";
+    }
 
 
 
