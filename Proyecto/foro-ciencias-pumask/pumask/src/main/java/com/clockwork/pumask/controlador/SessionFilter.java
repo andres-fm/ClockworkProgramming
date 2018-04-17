@@ -26,7 +26,8 @@ public class SessionFilter implements Filter {
     }
 
     /**
-     *
+     * The doFilter method of the Filter is called by the container each time a request/response pair 
+     * is passed through the chain due to a client request for a resource at the end of the chain.
      * @param request The servlet request we are processing
      * @param response The servlet response we are creating
      * @param chain The filter chain we are processing
@@ -51,10 +52,16 @@ public class SessionFilter implements Filter {
 
     }
 
+    /**
+    * Llamado por el contenedor web para indicarle a un filtro que está siendo puesto en un servicio.
+    */
     @Override
     public void init(FilterConfig fc) throws ServletException {
     }
 
+    /**
+    * Llamado por el contenedor web para indicarle a un filtro que está siendo puesto en no servicio.
+    */
     @Override
     public void destroy() {
     }

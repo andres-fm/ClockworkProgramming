@@ -30,6 +30,9 @@ public class ControladorRegistro {
 	private Usuario usuario; 
 	private String confirmacion;
 
+	/**
+	 * Constructor único.
+	 */
 	public ControladorRegistro(){
 		usuario = new Usuario();
 		confirmacion = "";
@@ -37,26 +40,50 @@ public class ControladorRegistro {
 		usuarioJpa = new UsuarioJpaController(emf);
 	}
 
+	/**
+	 * Regresa el usuario.
+	 * @return una instancia de Usuario.
+	 */
 	public Usuario getUsuario(){
 		return usuario;
 	}
 
+	/**
+	 * Asigna el usuario al usuario dado.
+	 * @param usuario El usuario dado.
+	 */
 	public void setUsuario(Usuario usuario){
 		this.usuario = usuario;
 	}
-
+	
+	/**
+	* Regresa una cadena con la confirmación.
+	* @return Una cadena con la confirmación.
+	*/
 	public String getConfirmacion(){
 		return confirmacion;
 	}
 
+	/**
+	* Asigna la confirmación a la cadena dada.
+	* @param conf La confirmación dada.
+	*/
 	public void setConfirmacion(String conf){
 		this.confirmacion = conf;
 	}
 
+	/**
+	* Regresa una cadena con parámetros para el URL del registro.
+	* @return una cadena con parámetros para el URL del registro.
+	*/
     public String formaRegistro() {
        return "registro?faces-redirect=true";
     }
 
+    /**
+    * Agrega un usuario.
+    * @return Un mensaje dependiendo de qué sucedió con el registro.
+    */
 	public String agregaUsuario() {
         if (!usuario.getContrasenia().equals(confirmacion)) {
             FacesContext.getCurrentInstance().addMessage(null
