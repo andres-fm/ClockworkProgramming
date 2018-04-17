@@ -55,7 +55,7 @@ public class AgregacionPregunta {
 	/**
 	 * Agrega una pregunta a la base de datos.
 	 */
-	public void agregaPregunta() {
+	public String agregaPregunta() {
 		pregunta.setFechaCreacion(new Date());
 		String carrera = obtenerPaginaActual();
 		pregunta.setCarrera(carrera);
@@ -64,7 +64,9 @@ public class AgregacionPregunta {
         pregunta.setCorreoUsuario((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
         try {
 			jpaController.create(pregunta);
+			return FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Pregunta agregada exitosamente"));
 		}catch (Exception e) {
+			return FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Ocurrio un error, intentar más tarde"));
 		}
 	}
 
