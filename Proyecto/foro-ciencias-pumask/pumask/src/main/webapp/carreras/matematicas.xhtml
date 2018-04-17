@@ -11,7 +11,7 @@
   <ui:define name="content">
 
   <h:head>
-    <title>Subforo Matematicas</title>
+    <title>Subforo Actuaría</title>
   </h:head>
   <h:body>
 
@@ -30,6 +30,8 @@
 
 
 	<h:form id="agregarP">
+	<h:panelGrid columns="2" cellpadding="5">
+
 
 	  	<h:outputText value="Pregunta"/>
 
@@ -47,6 +49,8 @@
 
 			<h:commandButton action="#{agregacionPregunta.agregaPregunta()}"
 							 value="Agregar Pregunta"/>
+		</h:panelGrid>
+
 		</h:form>
 
 
