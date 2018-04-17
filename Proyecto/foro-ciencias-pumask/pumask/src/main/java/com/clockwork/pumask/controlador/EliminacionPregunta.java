@@ -21,7 +21,7 @@ import static javax.faces.context.FacesContext.getCurrentInstance;
 
 /**
  *
- * @author miguel
+ * @author Juan
  */
 @ManagedBean
 @SessionScoped
@@ -32,13 +32,19 @@ public class EliminacionPregunta {
     private Usuario usuario;
 	private Pregunta pregunta;
 
+    /**
+    * Constructor único.
+    */
     public EliminacionPregunta() {
         FacesContext.getCurrentInstance().getViewRoot().setLocale(new Locale("es-Mx"));
         emf = EntityProvider.provider();
         jpaController = new PreguntaJpaController(emf);
     }
 
-
+    /**
+    * Agrega una pregunta
+    * @return Un mensaje dependiendo de qué ocurrió en la transacción.
+    */
 	public String agregaPregunta() {
 		pregunta.setFechaCreacion(new Date());
 		try {
@@ -49,10 +55,19 @@ public class EliminacionPregunta {
 		}
 	}
 
+    /**
+    * Regresa una lista de preguntas según el usuario.
+    * @param correo El correo para identificar al usuario.
+    * @return Una lista de preguntas según el usuario.
+    */
 	public List<Pregunta> obtenPreguntasUsuario(String correo) {
 		return jpaController.obtenPreguntasUsuario(correo);
 	}
 
+    /**
+    * Elimina una pregunta dada.
+    * @param pregunta La pregunta a eliminar.
+    */
     public void eliminaPregunta(Pregunta pregunta) {
         try {
         jpaController.destroy(pregunta.getIdPregunta());
@@ -61,7 +76,10 @@ public class EliminacionPregunta {
         }
     }
 
-
+    /**
+    * Regresa la pregunta.
+    * @return la pregunta.
+    */
 	public Pregunta getPregunta() {
 		return pregunta;
 	}
