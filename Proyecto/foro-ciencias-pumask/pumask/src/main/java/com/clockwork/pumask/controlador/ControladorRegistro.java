@@ -77,7 +77,7 @@ public class ControladorRegistro {
 	* @return una cadena con parámetros para el URL del registro.
 	*/
     public String formaRegistro() {
-       return "registro?faces-redirect=true";
+       return "/registro.xhtml?faces-redirect=true";
     }
 
     /**
