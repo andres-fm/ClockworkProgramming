@@ -32,6 +32,9 @@ public class AgregacionPregunta {
     //private Usuario usuario;
 	private Pregunta pregunta;
 
+	/**
+	 * Constructor único.
+	 */
     public AgregacionPregunta() {
         FacesContext.getCurrentInstance().getViewRoot().setLocale(new Locale("es-Mx"));
         emf = EntityProvider.provider();
@@ -41,10 +44,17 @@ public class AgregacionPregunta {
         pregunta.setCategoria("titulacion");
     }
 
+	/**
+	 * Nos dice si la pregunta es válida.
+	 * @return <code>true</code> si la pregunta es válida, <code>false</code> si no.
+	 */
 	public boolean validaPregunta() {
 		return !(pregunta.getContenido() == null);
 	}
 
+	/**
+	 * Agrega una pregunta a la base de datos.
+	 */
 	public void agregaPregunta() {
 		pregunta.setFechaCreacion(new Date());
 		String carrera = obtenerPaginaActual();
@@ -58,7 +68,10 @@ public class AgregacionPregunta {
 		}
 	}
 
-
+	/**
+	 * Obtiene el URL de la página actual.
+	 * @return El URL de la página actual.
+	 */
 	private static String obtenerPaginaActual() {
 		String context = getCurrentInstance().getViewRoot().getViewId();
 		String carrera = "";
@@ -90,16 +103,27 @@ public class AgregacionPregunta {
 	}
 
 
+	/**
+	 * Regresa las pregunts sobre titulación.
+	 * @return Una lista con las preguntas sobre titulación.
+	 */
 	public List<Pregunta> obtenerPreguntasTitulacion() {
 		return obtenerPreguntas("titulacion");
 	}
 
-
+	/**
+	 * Regresa las preguntas sobre servicio social.
+	 * @return Una lista con las preguntas sobre servicio social.
+	 */
 	public List<Pregunta> obtenerPreguntasServicioSocial() {
 		return obtenerPreguntas("servicio social");
 	}
 
-
+	/**
+	 * Regresa las preguntas según la categoría dada.
+	 * @param categoria La categoría sobre la que se obtendrán las preguntas.
+	 * @return Una lista con las preguntas sobre la categoría dada.
+	 */
 	public List<Pregunta> obtenerPreguntas(String categoria) { 	
 		return jpaController.obtenPreguntasCC(obtenerPaginaActual(), categoria);
 	}
