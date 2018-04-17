@@ -37,8 +37,8 @@ public class AgregacionPregunta {
         emf = EntityProvider.provider();
         jpaController = new PreguntaJpaController(emf);
         pregunta = new Pregunta();
-        pregunta.setCategoria("oscar");
-        pregunta.setCarrera("actuaria");
+        pregunta.setCarrera(obtenerPaginaActual());
+        pregunta.setCategoria("titulacion");
     }
 
 	public boolean validaPregunta() {
@@ -65,7 +65,7 @@ public class AgregacionPregunta {
 	}
 
 
-	public String obtenerPaginaActual() {
+	private static String obtenerPaginaActual() {
 		String context = getCurrentInstance().getViewRoot().getViewId();
 		String carrera = "";
 		if (context.equals("/carreras/actuaria.xhtml"))
@@ -79,7 +79,7 @@ public class AgregacionPregunta {
 		else if(context.equals("/carreras/ciencias_de_la_tierra.xhtml"))
 			carrera = "ciencias de la tierra";
 		else if(context.equals("/carreras/fisica.xhtml"))
-			carrera = "fisíca";
+			carrera = "fisica";
 		else if(context.equals("/carreras/fisica_biomedica.xhtml"))
 			carrera = "física biomédica";
 		else if(context.equals("/carreras/general.xhtml"))
@@ -118,34 +118,4 @@ public class AgregacionPregunta {
 		return pregunta;
 	}
 
-/*
-    public Usuario getusuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-    */
-
-
-/*
-
-    public String canLogin() {
-        Usuario l = jpaController.findLogin(correo, contrasenia);
-        boolean logged = l != null;
-        if (logged) {
-            FacesContext context = getCurrentInstance();
-            context.getExternalContext().getSessionMap().put("usuario", l);
-            return "index?faces-redirect=true";
-        }
-        return "index?faces-redirect=true";
-    }
-
-    public String logout() {
-        FacesContext context = getCurrentInstance();
-        context.getExternalContext().invalidateSession();
-        return "index?faces-redirect=true";
-    }
-*/
 }

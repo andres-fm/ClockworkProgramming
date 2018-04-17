@@ -30,20 +30,16 @@
 
 
 	<h:form id="agregarP">
-	<pm:field>
+
 	  	<h:outputText value="Pregunta"/>
 
 	  	<p:inputText value="#{agregacionPregunta.pregunta.contenido}" required="true" id="pregunta" label="pregunta" />
-	</pm:field>
 
-	<pm:field>
 	  	<h:outputText value="Información adicional"/>
 
 	  	<p:inputTextarea value="#{agregacionPregunta.pregunta.detalle}" required="false" id="detalles" label="detalles"
 	  	autoResize="true" maxlength="150"/>
-	</pm:field>
 
-	<pm:field>
 		<p:selectOneMenu value = "#{agregacionPregunta.pregunta.categoria}">
 			<f:selectItem itemLabel="Servicio Social" itemValue="servicio social"/>
 			<f:selectItem itemLabel="Titulación" itemValue="titulacion"/>
@@ -51,7 +47,6 @@
 
 			<h:commandButton action="#{agregacionPregunta.agregaPregunta()}"
 							 value="Agregar Pregunta"/>
-	</pm:field>
 		</h:form>
 
 

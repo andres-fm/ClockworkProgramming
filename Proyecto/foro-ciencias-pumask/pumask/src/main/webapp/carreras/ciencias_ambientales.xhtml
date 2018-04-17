@@ -1,17 +1,13 @@
-<ui:composition
-	template="/WEB-INF/facelets/templates/layout.xhtml"
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://xmlns.jcp.org/jsf/html"
-    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-    xmlns:p="http://primefaces.org/ui"
-    xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+    xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
-
-  <ui:define name="content">
 
   <h:head>
-    <title>Subforo ciencias ambientales</title>
+    <title>Subforo Ciencias ambientales</title>
   </h:head>
   <h:body>
 
@@ -26,7 +22,7 @@
 	</c:choose>
 
         
-	<p:dialog header="Agregar Pregunta" widgetVar="agp" dynamic="true" showEffect="explode" hideEffect="fold">
+	<p:dialog header="Agregar Pregunta" widgetVar="agp" dynamic="true">
 
 
 	<h:form id="agregarP">
@@ -37,7 +33,7 @@
 
 	  	<h:outputText value="Información adicional"/>
 
-	  	<p:inputTextarea value="#{agregacionPregunta.pregunta.detalle}" required="false" id="detalles" label="detalles"
+	  	<p:inputText value="#{agregacionPregunta.pregunta.detalle}" required="false" id="detalles" label="detalles"
 	  	autoResize="true" maxlength="150"/>
 
 		<p:selectOneMenu value = "#{agregacionPregunta.pregunta.categoria}">
@@ -55,7 +51,7 @@
 
 	<p:tabView>
         <p:tab title="Titulación">
-            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasTitulacion()}" rows="5" paginator="true" var="pregunta">
+            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasTitulacion()}" rows="10" paginator="true" var="pregunta">
 				<f:facet name="header">
 					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
 				</f:facet>
@@ -65,7 +61,7 @@
 			</p:dataTable>
         </p:tab>
         <p:tab title="Servicio Social">
-            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasServicioSocial()}" rows="5" paginator="true" var="pregunta">
+            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasServicioSocial()}" rows="10" paginator="true" var="pregunta">
 				<f:facet name="header">
 					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
 				</f:facet>
@@ -79,6 +75,4 @@
 
 </h:body>
 
-</ui:define>
-
-</ui:composition>
+</html>
