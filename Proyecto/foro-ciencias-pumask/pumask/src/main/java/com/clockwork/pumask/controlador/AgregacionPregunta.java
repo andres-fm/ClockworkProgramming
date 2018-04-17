@@ -13,6 +13,7 @@ import java.util.Locale;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManagerFactory;
 import java.util.List;
 import java.util.Date;
@@ -55,7 +56,7 @@ public class AgregacionPregunta {
 	/**
 	 * Agrega una pregunta a la base de datos.
 	 */
-	public String agregaPregunta() {
+	public void agregaPregunta() {
 		pregunta.setFechaCreacion(new Date());
 		String carrera = obtenerPaginaActual();
 		pregunta.setCarrera(carrera);
@@ -64,9 +65,9 @@ public class AgregacionPregunta {
         pregunta.setCorreoUsuario((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
         try {
 			jpaController.create(pregunta);
-			return FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Pregunta agregada exitosamente"));
+			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Pregunta agregada exitosamente"));
 		}catch (Exception e) {
-			return FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Ocurrio un error, intentar más tarde"));
+			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Ocurrio un error, intentar más tarde"));
 		}
 	}
 
