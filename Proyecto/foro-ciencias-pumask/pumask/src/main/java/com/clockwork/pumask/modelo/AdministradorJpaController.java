@@ -1,7 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Paquete que representa el modelo, en el patron de diseño
+ * Vista-Controldor.
+ * El modelo provee una representacion del Diseño de las Entidades
+ * que se decidieron en el diseño.
  */
 package com.clockwork.pumask.modelo;
 
@@ -19,20 +20,38 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
 /**
- *
+ * Clase generada con Ingenier&iacute;a inversa por Netbeans.
+ * utiliaza la tecnologia de java pages api.
  * @author dima
  */
 public class AdministradorJpaController implements Serializable {
 
+    /**
+     * Utiliza la clase EntityManagerFactory generada en EntityProvider
+     * la cual en base a la informacion del archivo Percistance (archivo
+     * auxiliar de Netbeans), administra la base de datos.
+     * @param emf objeto provisto en EntityProvider.
+     */
     public AdministradorJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
 
+    /**
+     * Regresa el objeto que ayuda a la administracion de la base de datos.
+     * @return El objeto que ayuda a la administracion de la base de datos.
+     */
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
 
+    /**
+     * 
+     * @param administrador
+     * @throws IllegalOrphanException
+     * @throws PreexistingEntityException
+     * @throws Exception 
+     */
     public void create(Administrador administrador) throws IllegalOrphanException, PreexistingEntityException, Exception {
         List<String> illegalOrphanMessages = null;
         Usuario usuarioOrphanCheck = administrador.getUsuario();
@@ -74,7 +93,15 @@ public class AdministradorJpaController implements Serializable {
             }
         }
     }
-
+    
+    /**
+     * Utiliza la tecnologia de Java Pages API.
+     * Administra y valida la informacion de la base de datos.
+     * @param administrador
+     * @throws IllegalOrphanException
+     * @throws NonexistentEntityException
+     * @throws Exception 
+     */
     public void edit(Administrador administrador) throws IllegalOrphanException, NonexistentEntityException, Exception {
         EntityManager em = null;
         try {
@@ -126,6 +153,10 @@ public class AdministradorJpaController implements Serializable {
         }
     }
 
+    /**
+     * @param id
+     * @throws NonexistentEntityException 
+     */
     public void destroy(String id) throws NonexistentEntityException {
         EntityManager em = null;
         try {
@@ -151,15 +182,32 @@ public class AdministradorJpaController implements Serializable {
             }
         }
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     public List<Administrador> findAdministradorEntities() {
         return findAdministradorEntities(true, -1, -1);
     }
 
+    /**
+     * 
+     * @param maxResults
+     * @param firstResult
+     * @return 
+     */
     public List<Administrador> findAdministradorEntities(int maxResults, int firstResult) {
         return findAdministradorEntities(false, maxResults, firstResult);
     }
 
+     /**
+      * 
+      * @param all
+      * @param maxResults
+      * @param firstResult
+      * @return 
+      */
     private List<Administrador> findAdministradorEntities(boolean all, int maxResults, int firstResult) {
         EntityManager em = getEntityManager();
         try {
@@ -175,7 +223,12 @@ public class AdministradorJpaController implements Serializable {
             em.close();
         }
     }
-
+    
+    /**
+     * 
+     * @param id
+     * @return 
+     */
     public Administrador findAdministrador(String id) {
         EntityManager em = getEntityManager();
         try {
@@ -184,7 +237,11 @@ public class AdministradorJpaController implements Serializable {
             em.close();
         }
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     public int getAdministradorCount() {
         EntityManager em = getEntityManager();
         try {
@@ -197,5 +254,5 @@ public class AdministradorJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

@@ -19,7 +19,9 @@
 
 	<c:choose>
 		<c:when test="#{controladorSesion.estaEnSesion()}">
+				<h:form>
 				<p:commandButton value="Agregar Pregunta" onclick="PF('agp').show();" type="button" />
+				</h:form>
 		</c:when>
 		<c:otherwise>
 		</c:otherwise>
@@ -29,29 +31,27 @@
 	<p:dialog header="Agregar Pregunta" widgetVar="agp" dynamic="true" showEffect="explode" hideEffect="fold">
 
 
-	<h:form id="agregarP">
-	<h:panelGrid columns="2" cellpadding="5">
+<h:form>
+    <p:panel id="panel"  style="margin-bottom:10px;">
+        <p:messages id="messages" />
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:outputLabel for="pregunta" value="Pregunta: " />
+	  		<p:inputText value="#{agregacionPregunta.pregunta.contenido}" required="true" id="pregunta" label="pregunta" />	
+ 
+            <p:outputLabel for="detalles" value="Información adicional" />
+            <p:inputTextarea value="#{agregacionPregunta.pregunta.detalle}" required="false" id="detalles" label="detalles"
+	  		autoResize="true" maxlength="150"/>
 
+            <p:selectOneMenu value = "#{agregacionPregunta.pregunta.categoria}">
+				<f:selectItem itemLabel="Servicio Social" itemValue="servicio social"/>
+				<f:selectItem itemLabel="Titulación" itemValue="titulacion"/>
+			</p:selectOneMenu>
+        </h:panelGrid>
+    </p:panel>
+    <p:commandButton action="#{agregacionPregunta.agregaPregunta()}"
+					value="Agregar Pregunta" update="panel"/>
+</h:form>
 
-	  	<h:outputText value="Pregunta"/>
-
-	  	<p:inputText value="#{agregacionPregunta.pregunta.contenido}" required="true" id="pregunta" label="pregunta" />
-
-	  	<h:outputText value="Información adicional"/>
-
-	  	<p:inputTextarea value="#{agregacionPregunta.pregunta.detalle}" required="false" id="detalles" label="detalles"
-	  	autoResize="true" maxlength="150"/>
-
-		<p:selectOneMenu value = "#{agregacionPregunta.pregunta.categoria}">
-			<f:selectItem itemLabel="Servicio Social" itemValue="servicio social"/>
-			<f:selectItem itemLabel="Titulación" itemValue="titulacion"/>
-		</p:selectOneMenu>
-
-			<h:commandButton action="#{agregacionPregunta.agregaPregunta()}"
-							 value="Agregar Pregunta"/>
-		</h:panelGrid>
-
-		</h:form>
 
 
 	</p:dialog>
