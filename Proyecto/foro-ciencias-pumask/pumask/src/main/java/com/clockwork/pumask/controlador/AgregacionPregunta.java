@@ -46,20 +46,14 @@ public class AgregacionPregunta {
 	}
 
 	public void agregaPregunta() {
-		System.out.println("Hola inicial");
 		pregunta.setFechaCreacion(new Date());
 		String carrera = obtenerPaginaActual();
 		pregunta.setCarrera(carrera);
 		pregunta.setIdPregunta(100);
-		System.out.println("Hola afuera dos");
 		FacesContext context = getCurrentInstance();
         pregunta.setCorreoUsuario((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
-        //pregunta.setIdPregunta(2);
-		//pregunta.setsetCorreoUsuario(null);
-		System.out.println("Hola afuera");
-		try {
+        try {
 			jpaController.create(pregunta);
-			System.out.println("Hola adentro");
 		}catch (Exception e) {
 		}
 	}
