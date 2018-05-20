@@ -30,21 +30,26 @@
                                             class="btn btn-outline-success my-2 my-sm-0"/>
                         </h:form>
 					</div>
-                   <div class ="my-2 my-lg-0">
-                        <h:form id="ajustes">
-                           <h:commandButton action="#{controladorSesion.ajustes()}"
-                                            value="Ajustes"
-                                            class="btn btn-outline-success my-2 my-sm-0"/>
-                        </h:form>
-                   </div>
-                   <div class ="my-2 my-lg-0">
-                        <h:form id="salir">
-                           <h:commandButton action="#{controladorSesion.cerrarSesion()}"
-                                            value="Salir"
-                                            class="btn btn-outline-success my-2 my-sm-0"/>
-                        </h:form>
-                   </div>
-					
+		   <c:choose>
+            	   	<c:when test="#{eliminacionUsuario.esAdministrador()}">
+		           <div class ="my-2 my-lg-0">
+		                <h:form id="ajustes">
+		                   <h:commandButton action="#{controladorSesion.ajustes()}"
+		                                    value="Ajustes"
+		                                    class="btn btn-outline-success my-2 my-sm-0"/>
+		                </h:form>
+		           </div>
+			</c:when>
+		   </c:choose>
+		   
+		           <div class ="my-2 my-lg-0">
+		                <h:form id="salir">
+		                   <h:commandButton action="#{controladorSesion.cerrarSesion()}"
+		                                    value="Salir"
+		                                    class="btn btn-outline-success my-2 my-sm-0"/>
+		                </h:form>
+		           </div>
+			
 			  </c:when>
 				  <c:otherwise>
 					<h:form id="myForm" class="form-inline my-2 my-lg-0">

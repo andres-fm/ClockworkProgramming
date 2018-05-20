@@ -1,19 +1,45 @@
 <ui:composition
-        template="/WEB-INF/facelets/templates/layout.xhtml"
-        xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:ui="http://java.sun.com/jsf/facelets">
-  
-    <ui:define name="content">
-    <div class="jumbotron">
+    template="/WEB-INF/facelets/templates/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">  
+  <ui:define name="content">
+    <h:head>
+      <title>Eliminar usuarios - </title>
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+      <!-- Custom styles for this template -->
+      <link href="css/album.css" rel="stylesheet"></link>
+    </h:head>
+    <h:body>
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Lista de usuarios</h1>
+        </div>
+      </section>
       <div class="container">
-        <h1 class="display-3">Ajustes</h1>
-        <p>
-	Aqui se desplegaran los ajustes necesarios
-        </p>
+        <ul class="list-group">
+          <c:forEach items="${eliminacionUsuario.getUsuarios()}" var="usuario">
+            <li class="list-group-item">
+            <div class="row">
+              <div class="col-8">
+                <p><b>${usuario.nombreUsuario}</b></p>
+              </div>
+              <div class="col-2">
+                <p style="font-size:12px;color:gray;text-align:end;">${usuario.correo}</p>
+              </div>
+            </div>
+            <h:form id="eliminar">
+		                   <h:commandButton action="#{eliminacionUsuario.eliminaUsuario(usuario)}"
+                                      value="eliminar"
+                                      class="btn btn-outline-success my-2 my-sm-0">
+                           </h:commandButton>
+		    </h:form>
+            </li>
+          </c:forEach>
+        </ul>
       </div>
-    </div>
-
+	</h:body>      
   </ui:define>
-  
-
 </ui:composition>
