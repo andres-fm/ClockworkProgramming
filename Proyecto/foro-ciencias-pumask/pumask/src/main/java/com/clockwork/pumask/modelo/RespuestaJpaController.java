@@ -22,16 +22,16 @@ import javax.persistence.criteria.Root;
  */
 public class RespuestaJpaController implements Serializable {
 
-    public RespuestaJpaController(EntityManagerFactory emf) {
+    public RespuestaJpaController(final EntityManagerFactory emf) {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
 
-    public EntityManager getEntityManager() {
+    public final EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
 
-    public void create(Respuesta respuesta) throws PreexistingEntityException, Exception {
+    public final void create(final Respuesta respuesta) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
             em = getEntityManager();
@@ -68,7 +68,7 @@ public class RespuestaJpaController implements Serializable {
         }
     }
 
-    public void edit(Respuesta respuesta) throws NonexistentEntityException, Exception {
+    public final void edit(final Respuesta respuesta) throws NonexistentEntityException, Exception {
         EntityManager em = null;
         try {
             em = getEntityManager();
@@ -120,7 +120,7 @@ public class RespuestaJpaController implements Serializable {
         }
     }
 
-    public void destroy(Integer id) throws NonexistentEntityException {
+    public final void destroy(final Integer id) throws NonexistentEntityException {
         EntityManager em = null;
         try {
             em = getEntityManager();
@@ -151,15 +151,15 @@ public class RespuestaJpaController implements Serializable {
         }
     }
 
-    public List<Respuesta> findRespuestaEntities() {
+    public final List<Respuesta> findRespuestaEntities() {
         return findRespuestaEntities(true, -1, -1);
     }
 
-    public List<Respuesta> findRespuestaEntities(int maxResults, int firstResult) {
+    public final List<Respuesta> findRespuestaEntities(final int maxResults, final int firstResult) {
         return findRespuestaEntities(false, maxResults, firstResult);
     }
 
-    private List<Respuesta> findRespuestaEntities(boolean all, int maxResults, int firstResult) {
+    private List<Respuesta> findRespuestaEntities(final boolean all, final int maxResults, final int firstResult) {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
@@ -175,7 +175,7 @@ public class RespuestaJpaController implements Serializable {
         }
     }
 
-    public Respuesta findRespuesta(Integer id) {
+    public final Respuesta findRespuesta(final Integer id) {
         EntityManager em = getEntityManager();
         try {
             return em.find(Respuesta.class, id);
@@ -184,7 +184,7 @@ public class RespuestaJpaController implements Serializable {
         }
     }
 
-    public int getRespuestaCount() {
+    public final int getRespuestaCount() {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
@@ -196,5 +196,5 @@ public class RespuestaJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }
