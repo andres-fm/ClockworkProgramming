@@ -8,8 +8,10 @@ package com.clockwork.pumask.controlador;
 import com.clockwork.pumask.modelo.EntityProvider;
 import com.clockwork.pumask.modelo.Usuario;
 import com.clockwork.pumask.modelo.Pregunta;
+import com.clockwork.pumask.modelo.Respuesta;
 import com.clockwork.pumask.modelo.PreguntaJpaController;
 import java.util.Locale;
+import java.util.Collection;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.application.FacesMessage;
@@ -31,6 +33,7 @@ public class AgregacionPregunta {
     private PreguntaJpaController jpaController;
     //private Usuario usuario;
 	private Pregunta pregunta;
+	private Integer nuevaDir;
 
 	/**
 	 * Constructor único.
@@ -42,6 +45,7 @@ public class AgregacionPregunta {
         pregunta = new Pregunta();
         pregunta.setCarrera(obtenerPaginaActual());
         pregunta.setCategoria("titulacion");
+        nuevaDir = new Integer(1);
     }
 
 	/**
@@ -137,5 +141,27 @@ public class AgregacionPregunta {
 	public Pregunta getPregunta() {
 		return pregunta;
 	}
+	
+	public Collection<Respuesta> obtenRespuestas() {
+		FacesContext context = getCurrentInstance();
+		Pregunta preg = (Pregunta) (context.getExternalContext().getSessionMap().get("pregunta"));
+		return jpaController.findPregunta(preg.getIdPregunta()).getRespuestaCollection();
+	
+	} 
+	
+	public void setNuevaDir(Integer preg) {
+		this.nuevaDir = preg;
+	}
+	
+	public String verRespuestas() {
+	    Pregunta l = jpaController.findPregunta(nuevaDir);
+	    //System.out.println(l.getContenido());
+        if (validaPregunta()) {
+            FacesContext context = getCurrentInstance();
+            context.getExternalContext().getSessionMap().put("pregunta", l);
+            return "/PreguntaIH.xhtml?faces-redirect=true";
+        }
+        return "/index?faces-redirect=true";
+    }
 
 }

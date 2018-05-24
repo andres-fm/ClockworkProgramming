@@ -68,7 +68,7 @@ public class RespuestaJpaController implements Serializable {
         }
     }
 
-    public final void edit(final Respuesta respuesta) throws NonexistentEntityException, Exception {
+    public final void edit( Respuesta respuesta) throws NonexistentEntityException, Exception {
         EntityManager em = null;
         try {
             em = getEntityManager();

@@ -65,6 +65,8 @@
 				</f:facet>
 				<p:column headerText="Preguntas">
    					<h:outputText value="#{pregunta.contenido}" />
+   					<p:commandButton action="#{agregacionPregunta.verRespuestas()}"
+					value="Ver Respuestas"/>
   				</p:column>
 			</p:dataTable>
         </p:tab>

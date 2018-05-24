@@ -1,0 +1,72 @@
+<ui:composition
+	template="/WEB-INF/facelets/templates/common.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+
+  <ui:define name="content">
+
+  <h:head>
+    <title>PreguntaIH</title>
+  </h:head>
+  <h:body>
+
+	<h3> Interfaz de foro </h3>
+
+	<c:choose>
+		<c:when test="#{controladorSesion.estaEnSesion()}">
+				<h:form>
+				<p:commandButton value="Agregar Respuesta" onclick="PF('agp').show();" type="button" />
+				</h:form>
+		</c:when>
+		<c:otherwise>
+		</c:otherwise>
+	</c:choose>
+
+        
+	<p:dialog header="Agregar Respuesta" widgetVar="agp" dynamic="true" showEffect="explode" hideEffect="fold">
+
+
+<h:form>
+    <p:panel id="panel"  style="margin-bottom:10px;">
+        <p:messages id="messages" />
+        <h:panelGrid columns="2" cellpadding="5">
+            
+            <p:outputLabel for="respuesta" value="Respuesta" />
+            <p:inputTextarea value="#{agregacionRespuesta.respuesta.contenido}" required="false" id="respuesta" label="respuesta"
+	  		autoResize="true" maxlength="150"/>
+        </h:panelGrid>
+    </p:panel>
+    <p:commandButton action="#{agregacionRespuesta.agregaRespuesta()}"
+					value="Publicar Respuesta" update="panel"/>
+</h:form>
+
+
+
+	</p:dialog>
+
+
+<p:messages id="messages" autoUpdate="true"/>
+<p:panel id="Pregunta" header="#{agregacionPregunta.pregunta.contenido}">
+  <h:panelGrid>
+    
+    <p:dataTable value="#{agregacionPregunta.obtenerRespuestas}" rows="5" paginator="true" var="respuesta">
+		<p:column headerText="Preguntas">
+   			<h:outputText value="#{respuesta.contenido}" />
+  		</p:column>
+	</p:dataTable>
+    
+  </h:panelGrid>
+</p:panel>
+
+
+
+</h:body>
+
+</ui:define>
+
+</ui:composition>
