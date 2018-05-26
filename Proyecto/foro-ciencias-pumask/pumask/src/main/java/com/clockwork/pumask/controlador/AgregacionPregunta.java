@@ -63,7 +63,6 @@ public class AgregacionPregunta {
 		pregunta.setFechaCreacion(new Date());
 		String carrera = obtenerPaginaActual();
 		pregunta.setCarrera(carrera);
-		pregunta.setIdPregunta(100);
 		FacesContext context = getCurrentInstance();
         pregunta.setCorreoUsuario((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
         try {
