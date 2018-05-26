@@ -28,8 +28,8 @@ CREATE TABLE pregunta (
 	id_pregunta        Serial,
     correo_usuario     text NOT NULL,
     categoria          varchar(50) NOT NULL,
-    contenido          varchar(50) NOT NULL,
-    carrera            varchar(30) NOT NULL,
+    contenido          varchar(250) NOT NULL,
+    carrera            varchar(60) NOT NULL,
     detalle            text,
     fecha_creacion     date NOT NULL,
     CONSTRAINT llave_pregunta PRIMARY KEY(id_pregunta),
@@ -82,6 +82,12 @@ $$ language sql stable;
 
 
 insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'no sirve este url', '2018-03-31');
+insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('user@ciencias.unam.mx', 'matt', '12345', 'no sirve este url', '2018-03-31');
+insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('admin@ciencias.unam.mx', 'El bueno', '12345', 'no sirve este url', '2018-03-31');
+insert into administrador (correo_admin) values ('admin@ciencias.unam.mx');
+
+
+
 
 insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 1', 'actuaria', '2018-03-31');
 insert into pregunta (correo_usuario, categoria, contenido, carrera, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'titulacion', 'pregunta 2', 'fisica', '2018-03-31');

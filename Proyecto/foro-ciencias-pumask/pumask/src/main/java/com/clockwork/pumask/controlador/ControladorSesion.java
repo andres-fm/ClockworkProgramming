@@ -8,6 +8,7 @@ package com.clockwork.pumask.controlador;
 import com.clockwork.pumask.modelo.EntityProvider;
 import com.clockwork.pumask.modelo.Usuario;
 import com.clockwork.pumask.modelo.UsuarioJpaController;
+import com.clockwork.pumask.modelo.AdministradorJpaController;
 import java.util.Locale;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -26,6 +27,7 @@ public class ControladorSesion {
 
     private EntityManagerFactory emf;
     private UsuarioJpaController jpaController;
+    private AdministradorJpaController administradorJpa;
     private String correo;
     private String contrasenia;
 
@@ -34,6 +36,7 @@ public class ControladorSesion {
         FacesContext.getCurrentInstance().getViewRoot().setLocale(new Locale("es-Mx"));
         emf = EntityProvider.provider();
         jpaController = new UsuarioJpaController(emf);
+        administradorJpa = new AdministradorJpaController(emf);
         correo = "";
         contrasenia = "";
     }
@@ -112,6 +115,19 @@ public class ControladorSesion {
 	return "/secured/mi_perfil.xhtml?faces-redirect=true";
     }
 
+
+		/**
+	 * Nos dice si el usuario en la sesion actual es administrador. 
+	 * @return <code>true</code> si lo es, <code>false</code> si no.
+	 */
+	public boolean esAdministrador() {
+		FacesContext context = getCurrentInstance();
+        Usuario l = (Usuario) context.getExternalContext().getSessionMap().get("usuario");
+	    if (l != null)
+	    	return administradorJpa.findAdministrador(l.getCorreo()) != null;
+	    else
+	    	return false;
+	}
 
 
 }
