@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.18">
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/controlador/SessionFilter.java">
+<error line="0" severity="error" message="Falta el archivo package-info.java." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="25" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="29" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="29" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="30" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="38" column="5" severity="error" message="El método &apos;doFilter&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="38" column="26" severity="error" message="El parámetro request debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="38" column="50" severity="error" message="El parámetro response debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="39" column="26" severity="error" message="El parámetro chain debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="56" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="59" column="22" severity="error" message="El parámetro fc debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="63" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/controlador/ControladorRegistro.java">
+<error line="11" column="8" severity="error" message="import no usado - java.util.Locale." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="18" column="15" severity="error" message="import no usado - javax.faces.context.FacesContext.getCurrentInstance." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="28" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="29" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="30" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="30" column="1" severity="error" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="30" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="31" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="36" column="37" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="47" column="9" severity="error" message="El método &apos;getUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="47" column="36" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="55" column="9" severity="error" message="El método &apos;setUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="55" column="32" severity="error" message="El parámetro usuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="40" severity="error" message="&apos;usuario&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="55" column="48" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="58" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="63" column="9" severity="error" message="El método &apos;getConfirmacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="63" column="40" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="71" column="9" severity="error" message="El método &apos;setConfirmacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="71" column="37" severity="error" message="El parámetro conf debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="49" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="79" column="5" severity="error" message="El método &apos;formaRegistro&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="87" column="9" severity="error" message="El método &apos;agregaUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="90" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="90" column="22" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="93" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="93" column="28" severity="error" message="&apos;try&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="93" column="28" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="94" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="95" column="14" severity="error" message="&apos;catch&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="95" column="14" severity="error" message="&apos;}&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="95" column="19" severity="error" message="&apos;catch&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="95" column="32" severity="error" message="&apos;{&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="97" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="97" column="22" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="98" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="102" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="104" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/controlador/EliminacionPregunta.java">
+<error line="20" column="15" severity="error" message="import no usado - javax.faces.context.FacesContext.getCurrentInstance." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="30" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="31" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="32" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="33" column="1" severity="error" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="33" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="39" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="44" severity="error" message="La primera frase debería finalizar con un punto." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="48" column="9" severity="error" message="El método &apos;agregaPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="53" column="18" severity="error" message="&apos;catch&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="53" column="18" severity="error" message="&apos;}&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="54" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="63" column="9" severity="error" message="El método &apos;obtenPreguntasUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="63" column="53" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="5" severity="error" message="El método &apos;eliminaPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="71" column="33" severity="error" message="El parámetro pregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="42" severity="error" message="&apos;pregunta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="74" column="16" severity="error" message="&apos;catch&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="75" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="83" column="9" severity="error" message="El método &apos;getPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/controlador/ControladorSesion.java">
+<error line="19" severity="error" message="La primera frase debería finalizar con un punto." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="27" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="28" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="29" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="30" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="33" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="34" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="40" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="41" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="42" column="1" severity="error" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="42" column="9" severity="error" message="El método &apos;getCorreo&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="42" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="47" column="9" severity="error" message="El método &apos;setCorreo&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="47" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="47" column="31" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="47" column="38" severity="error" message="&apos;correo&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="52" column="9" severity="error" message="El método &apos;getContrasenia&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="52" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="57" column="9" severity="error" message="El método &apos;setContrasenia&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="57" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="57" column="36" severity="error" message="El parámetro contrasenia debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="57" column="43" severity="error" message="&apos;contrasenia&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="61" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="62" column="5" severity="error" message="El método &apos;iniciarSesion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="62" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="73" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="74" column="5" severity="error" message="El método &apos;cerrarSesion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="74" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="81" column="5" severity="error" message="El método &apos;estaEnSesion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="81" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="87" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="88" column="5" severity="error" message="El método &apos;mostrarBotones&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="88" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="90" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="90" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="94" column="5" severity="error" message="El método &apos;getUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="94" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="96" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="100" column="5" severity="error" message="El método &apos;formaIniciarSesion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="100" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="106" column="5" severity="error" message="El método &apos;ajustes&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="106" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="111" column="5" severity="error" message="El método &apos;miPerfil&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="111" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/controlador/AgregacionPregunta.java">
+<error line="31" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="32" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="34" column="1" severity="error" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="34" column="9" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="40" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="50" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="52" column="9" severity="error" message="El método &apos;validaPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="59" column="9" severity="error" message="El método &apos;agregaPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="63" column="40" severity="error" message="&apos;100&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="65" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="68" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="69" column="18" severity="error" message="&apos;catch&apos; no está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="69" column="18" severity="error" message="&apos;}&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="70" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="81" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="83" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="83" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="85" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="85" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="87" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="87" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="89" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="89" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="91" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="91" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="93" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="93" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="95" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="95" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="97" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="97" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="97" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="99" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="99" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="101" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="101" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="103" severity="error" message="La construcción &apos;if&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="103" column="24" severity="error" message="&apos;if&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="113" column="9" severity="error" message="El método &apos;obtenerPreguntasTitulacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="121" column="9" severity="error" message="El método &apos;obtenerPreguntasServicioSocial&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="127" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="130" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="130" column="9" severity="error" message="El método &apos;obtenerPreguntas&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="130" column="48" severity="error" message="El parámetro categoria debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="131" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="134" severity="error" message="La primera frase debería finalizar con un punto." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="138" column="9" severity="error" message="El método &apos;getPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/controlador/UsuarioBean.java">
+<error line="23" severity="error" message="La primera frase debería finalizar con un punto." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="29" column="5" severity="error" message="El método &apos;isLogged&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="29" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="31" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="35" column="5" severity="error" message="El método &apos;getUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="35" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/Usuario.java">
+<error line="0" severity="error" message="Falta el archivo package-info.java." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="37" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="37" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="38" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="38" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="39" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="39" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="40" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="40" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="41" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="41" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="47" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="49" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="56" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="60" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="63" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="66" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="68" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="72" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="74" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="76" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="79" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="82" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="82" column="20" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="82" column="27" severity="error" message="&apos;correo&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="86" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="86" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="86" column="20" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="27" severity="error" message="&apos;correo&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="86" column="35" severity="error" message="El parámetro nombreUsuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="42" severity="error" message="&apos;nombreUsuario&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="86" column="57" severity="error" message="El parámetro contrasenia debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="64" severity="error" message="&apos;contrasenia&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="86" column="77" severity="error" message="El parámetro fechaCreacion debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="82" severity="error" message="&apos;fechaCreacion&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="93" column="5" severity="error" message="El método &apos;getCorreo&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="93" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" column="5" severity="error" message="El método &apos;setCorreo&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="97" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" column="27" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="97" column="34" severity="error" message="&apos;correo&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="101" column="5" severity="error" message="El método &apos;getNombreUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="101" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="5" severity="error" message="El método &apos;setNombreUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="105" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="34" severity="error" message="El parámetro nombreUsuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="41" severity="error" message="&apos;nombreUsuario&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="109" column="5" severity="error" message="El método &apos;getContrasenia&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="109" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="113" column="5" severity="error" message="El método &apos;setContrasenia&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="113" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="113" column="32" severity="error" message="El parámetro contrasenia debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="113" column="39" severity="error" message="&apos;contrasenia&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="117" column="5" severity="error" message="El método &apos;getUrlAvatar&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="117" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="121" column="5" severity="error" message="El método &apos;setUrlAvatar&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="121" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="121" column="30" severity="error" message="El parámetro urlAvatar debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="121" column="37" severity="error" message="&apos;urlAvatar&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="125" column="5" severity="error" message="El método &apos;getFechaCreacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="125" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="129" column="5" severity="error" message="El método &apos;setFechaCreacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="129" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="129" column="34" severity="error" message="El parámetro fechaCreacion debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="129" column="39" severity="error" message="&apos;fechaCreacion&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="133" column="5" severity="error" message="El método &apos;getAdministrador&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="133" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="137" column="5" severity="error" message="El método &apos;setAdministrador&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="137" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="137" column="34" severity="error" message="El parámetro administrador debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="137" column="48" severity="error" message="&apos;administrador&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="141" column="5" severity="error" message="El método &apos;getRespuestaCollection&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="141" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="146" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="146" column="5" severity="error" message="El método &apos;setRespuestaCollection&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="146" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="146" column="40" severity="error" message="El parámetro respuestaCollection debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="146" column="62" severity="error" message="&apos;respuestaCollection&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="150" column="5" severity="error" message="El método &apos;getPreguntaCollection&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="150" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="155" column="5" severity="error" message="El método &apos;setPreguntaCollection&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="155" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="155" column="39" severity="error" message="El parámetro preguntaCollection debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="155" column="60" severity="error" message="&apos;preguntaCollection&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="159" column="5" severity="error" message="El método &apos;hashCode&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="162" column="33" severity="error" message="Evitar los condicionales en línea." source="com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"/>
+<error line="166" column="5" severity="error" message="El método &apos;equals&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="167" column="27" severity="error" message="El parámetro object debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="168" severity="error" message="El comentario coincide con el formato to-do &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="168" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="173" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="179" column="5" severity="error" message="El método &apos;toString&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="183" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/Administrador.java">
+<error line="30" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="31" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="31" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="35" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="39" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="39" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="53" column="26" severity="error" message="El parámetro correoAdmin debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="53" column="33" severity="error" message="&apos;correoAdmin&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="61" column="5" severity="error" message="El método &apos;getCorreoAdmin&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="70" column="5" severity="error" message="El método &apos;setCorreoAdmin&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="70" column="32" severity="error" message="El parámetro correoAdmin debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="70" column="39" severity="error" message="&apos;correoAdmin&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="78" column="5" severity="error" message="El método &apos;getUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="86" column="5" severity="error" message="El método &apos;setUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="86" column="28" severity="error" message="El parámetro usuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="36" severity="error" message="&apos;usuario&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="93" column="5" severity="error" message="El método &apos;hashCode&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="96" column="38" severity="error" message="Evitar los condicionales en línea." source="com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"/>
+<error line="105" column="5" severity="error" message="El método &apos;equals&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="106" column="27" severity="error" message="El parámetro object debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="107" severity="error" message="El comentario coincide con el formato to-do &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="107" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="112" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="122" column="5" severity="error" message="El método &apos;toString&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="124" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/UsuarioJpaController.java">
+<error line="28" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="28" column="33" severity="error" message="El parámetro emf debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="28" column="54" severity="error" message="&apos;emf&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="31" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="33" column="5" severity="error" message="El método &apos;getEntityManager&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="33" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="37" column="5" severity="error" message="El método &apos;create&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="37" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="24" severity="error" message="El parámetro usuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="50" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="53" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="54" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="55" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="56" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="59" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="60" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="61" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="62" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="70" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="75" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="76" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="78" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="80" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="81" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="84" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="85" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="87" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="89" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="90" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="96" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="106" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="106" column="5" severity="error" message="El método &apos;edit&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="106" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="106" column="22" severity="error" message="El parámetro usuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="111" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="112" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="114" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="115" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="116" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="117" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="119" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="123" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="125" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="126" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="130" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="133" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="134" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="138" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="145" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="148" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="149" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="150" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="151" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="155" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="156" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="157" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="158" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="163" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="164" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="167" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="172" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="173" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="174" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="176" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="177" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="178" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="179" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="183" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="184" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="185" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="187" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="188" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="189" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="190" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="200" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="211" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="211" column="5" severity="error" message="El método &apos;destroy&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="211" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="211" column="25" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="221" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="229" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="231" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="232" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="236" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="238" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="239" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="243" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="257" column="5" severity="error" message="El método &apos;findUsuarioEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="257" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="261" column="5" severity="error" message="El método &apos;findUsuarioEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="261" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="261" column="46" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="261" column="62" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="265" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="265" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="265" column="47" severity="error" message="El parámetro all debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="265" column="60" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="265" column="76" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="281" column="5" severity="error" message="El método &apos;findUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="281" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="281" column="32" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="290" column="5" severity="error" message="El método &apos;getUsuarioCount&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="290" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="304" column="5" severity="error" message="El método &apos;puedeAcceder&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="304" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="304" column="33" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="304" column="48" severity="error" message="El parámetro contrasenia debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="312" column="5" severity="error" message="El método &apos;findLogin&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="312" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="312" column="30" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="312" column="45" severity="error" message="El parámetro contrasenia debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="322" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/EntityProvider.java">
+<error line="18" severity="error" message="La clase EntityProvider debería declararse final." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+<error line="20" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="20" column="41" severity="error" message="El nombre &apos;_emf&apos; debe coincidir con el patrón &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="36" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/exceptions/PreexistingEntityException.java">
+<error line="0" severity="error" message="Falta el archivo package-info.java." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="4" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="4" column="39" severity="error" message="El parámetro message debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="4" column="55" severity="error" message="El parámetro cause debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="7" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="7" column="39" severity="error" message="El parámetro message debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/exceptions/IllegalOrphanException.java">
+<error line="6" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="7" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="8" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="8" column="35" severity="error" message="El parámetro messages debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="8" column="48" severity="error" message="&apos;messages&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="9" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="9" column="56" severity="error" message="Evitar los condicionales en línea." source="com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"/>
+<error line="12" column="9" severity="error" message="&apos;}&apos; en la columna 9 debe estar en la misma línea que la siguiente parte de una declaración de bloques múltiples (uno que contiene directamente varios bloques: if/else-if/else o try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
+<error line="17" column="5" severity="error" message="El método &apos;getMessages&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="17" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/exceptions/NonexistentEntityException.java">
+<error line="3" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="4" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="4" column="39" severity="error" message="El parámetro message debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="4" column="55" severity="error" message="El parámetro cause debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="7" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="7" column="39" severity="error" message="El parámetro message debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/RespuestaJpaController.java">
+<error line="25" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="25" column="35" severity="error" message="El parámetro emf debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="25" column="56" severity="error" message="&apos;emf&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="28" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="30" column="5" severity="error" message="El método &apos;getEntityManager&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="30" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="34" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="34" column="5" severity="error" message="El método &apos;create&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="34" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="34" column="24" severity="error" message="El parámetro respuesta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="41" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="46" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="61" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="71" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="71" column="5" severity="error" message="El método &apos;edit&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="71" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="71" column="22" severity="error" message="El parámetro respuesta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="76" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="82" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="86" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="98" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="102" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="112" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="123" column="5" severity="error" message="El método &apos;destroy&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="123" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="123" column="25" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="133" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="154" column="5" severity="error" message="El método &apos;findRespuestaEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="154" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="158" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="158" column="5" severity="error" message="El método &apos;findRespuestaEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="158" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="158" column="50" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="158" column="66" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="162" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="162" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="162" column="51" severity="error" message="El parámetro all debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="162" column="64" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="162" column="80" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="178" column="5" severity="error" message="El método &apos;findRespuesta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="178" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="178" column="36" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="187" column="5" severity="error" message="El método &apos;getRespuestaCount&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="187" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="199" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/Respuesta.java">
+<error line="32" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="32" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="33" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="33" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="34" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="34" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="35" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="35" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="36" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="36" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="40" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="44" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="47" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="51" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="54" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="57" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="60" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="64" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="67" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="67" column="22" severity="error" message="El parámetro idRespuesta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="67" column="30" severity="error" message="&apos;idRespuesta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="71" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="71" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="71" column="22" severity="error" message="El parámetro idRespuesta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="30" severity="error" message="&apos;idRespuesta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="71" column="43" severity="error" message="El parámetro contenido debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="50" severity="error" message="&apos;contenido&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="71" column="61" severity="error" message="El parámetro fechaPublicacion debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="66" severity="error" message="&apos;fechaPublicacion&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="71" column="84" severity="error" message="El parámetro likes debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="88" severity="error" message="&apos;likes&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="71" column="95" severity="error" message="El parámetro dislikes debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="71" column="99" severity="error" message="&apos;dislikes&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="79" column="5" severity="error" message="El método &apos;getIdRespuesta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="79" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" column="5" severity="error" message="El método &apos;setIdRespuesta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="83" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" column="32" severity="error" message="El parámetro idRespuesta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="83" column="40" severity="error" message="&apos;idRespuesta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="87" column="5" severity="error" message="El método &apos;getContenido&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="87" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="91" column="5" severity="error" message="El método &apos;setContenido&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="91" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="91" column="30" severity="error" message="El parámetro contenido debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="91" column="37" severity="error" message="&apos;contenido&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="95" column="5" severity="error" message="El método &apos;getFechaPublicacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="95" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="99" column="5" severity="error" message="El método &apos;setFechaPublicacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="99" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="99" column="37" severity="error" message="El parámetro fechaPublicacion debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="99" column="42" severity="error" message="&apos;fechaPublicacion&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="103" column="5" severity="error" message="El método &apos;getLikes&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="103" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="107" column="5" severity="error" message="El método &apos;setLikes&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="107" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="107" column="26" severity="error" message="El parámetro likes debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="107" column="30" severity="error" message="&apos;likes&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="111" column="5" severity="error" message="El método &apos;getDislikes&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="111" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="115" column="5" severity="error" message="El método &apos;setDislikes&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="115" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="115" column="29" severity="error" message="El parámetro dislikes debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="115" column="33" severity="error" message="&apos;dislikes&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="119" column="5" severity="error" message="El método &apos;getIdPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="119" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="123" column="5" severity="error" message="El método &apos;setIdPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="123" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="123" column="31" severity="error" message="El parámetro idPregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="123" column="40" severity="error" message="&apos;idPregunta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="127" column="5" severity="error" message="El método &apos;getUsuarioCorreo&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="127" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="131" column="5" severity="error" message="El método &apos;setUsuarioCorreo&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="131" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="131" column="34" severity="error" message="El parámetro usuarioCorreo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="131" column="42" severity="error" message="&apos;usuarioCorreo&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="135" column="5" severity="error" message="El método &apos;hashCode&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="138" column="38" severity="error" message="Evitar los condicionales en línea." source="com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"/>
+<error line="142" column="5" severity="error" message="El método &apos;equals&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="143" column="27" severity="error" message="El parámetro object debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="144" severity="error" message="El comentario coincide con el formato to-do &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="144" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="149" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="155" column="5" severity="error" message="El método &apos;toString&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="157" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="159" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/PreguntaJpaController.java">
+<error line="28" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="28" column="34" severity="error" message="El parámetro emf debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="28" column="55" severity="error" message="&apos;emf&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="31" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="33" column="5" severity="error" message="El método &apos;getEntityManager&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="33" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="37" column="5" severity="error" message="El método &apos;create&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="37" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="24" severity="error" message="El parámetro pregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="47" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="50" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="51" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="52" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="53" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="61" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="62" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="64" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="66" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="67" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="73" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="83" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="83" column="5" severity="error" message="El método &apos;edit&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="83" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" column="22" severity="error" message="El parámetro pregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="88" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="91" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="92" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="94" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="95" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="99" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="106" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="109" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="110" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="111" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="112" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="117" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="121" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="125" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="126" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="127" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="129" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="130" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="131" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="132" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="142" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="153" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="153" column="5" severity="error" message="El método &apos;destroy&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="153" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="153" column="25" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="163" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="166" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="167" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="171" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="190" column="5" severity="error" message="El método &apos;findPreguntaEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="190" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="194" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="194" column="5" severity="error" message="El método &apos;findPreguntaEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="194" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="194" column="48" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="194" column="64" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="198" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="198" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="198" column="49" severity="error" message="El parámetro all debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="198" column="62" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="198" column="78" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="214" column="5" severity="error" message="El método &apos;findPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="214" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="214" column="34" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="223" column="5" severity="error" message="El método &apos;getPreguntaCount&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="223" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="235" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="236" column="5" severity="error" message="El método &apos;obtenPreguntasCarrera&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="236" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="236" column="49" severity="error" message="El parámetro carrera debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="237" column="5" severity="error" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="243" column="5" severity="error" message="El método &apos;obtenPreguntasCC&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="243" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="243" column="44" severity="error" message="El parámetro carrera debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="243" column="60" severity="error" message="El parámetro categoria debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="251" column="5" severity="error" message="El método &apos;obtenPreguntasUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="251" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="251" column="49" severity="error" message="El parámetro correo debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="255" column="32" severity="error" message="&apos;conversión de tipos&apos; no está seguido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="257" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="258" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/Pregunta.java">
+<error line="29" severity="error" message="Usar la importación con &apos;.*&apos; debería evitarse - javax.persistence.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="41" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="42" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="42" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="43" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="43" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="44" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="44" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="45" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="45" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="46" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="46" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="47" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="47" column="4" severity="error" message="&apos;,&apos; está precedido de espacio en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="51" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="58" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="63" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="66" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="69" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="72" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="74" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="78" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="80" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="89" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="92" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="94" column="21" severity="error" message="El parámetro idPregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="94" column="29" severity="error" message="&apos;idPregunta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="103" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="105" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="105" column="21" severity="error" message="El parámetro idPregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="29" severity="error" message="&apos;idPregunta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="105" column="29" severity="error" message="Se esperaba la etiqueta @param para &apos;idPregunta&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="41" severity="error" message="El parámetro categoria debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="48" severity="error" message="&apos;categoria&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="105" column="48" severity="error" message="Se esperaba la etiqueta @param para &apos;categoria&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="59" severity="error" message="El parámetro contenido debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="66" severity="error" message="&apos;contenido&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="105" column="66" severity="error" message="Se esperaba la etiqueta @param para &apos;contenido&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="77" severity="error" message="El parámetro carrera debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="84" severity="error" message="&apos;carrera&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="105" column="84" severity="error" message="Se esperaba la etiqueta @param para &apos;carrera&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="93" severity="error" message="El parámetro fechaCreacion debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="98" severity="error" message="&apos;fechaCreacion&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="112" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="115" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="117" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="117" column="5" severity="error" message="El método &apos;getIdPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="122" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="124" column="5" severity="error" message="El método &apos;setIdPregunta&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="124" column="31" severity="error" message="El parámetro idPregunta debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="124" column="39" severity="error" message="&apos;idPregunta&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="127" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="129" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="131" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="133" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="133" column="5" severity="error" message="El método &apos;getCategoria&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="138" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="140" column="5" severity="error" message="El método &apos;setCategoria&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="140" column="30" severity="error" message="El parámetro categoria debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="140" column="37" severity="error" message="&apos;categoria&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="143" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="146" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="148" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="148" column="5" severity="error" message="El método &apos;getContenido&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="151" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="154" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="156" column="5" severity="error" message="El método &apos;setContenido&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="156" column="30" severity="error" message="El parámetro contenido debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="156" column="37" severity="error" message="&apos;contenido&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="159" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="162" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="164" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="164" column="5" severity="error" message="El método &apos;getCarrera&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="167" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="170" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="172" column="5" severity="error" message="El método &apos;setCarrera&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="172" column="28" severity="error" message="El parámetro carrera debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="172" column="35" severity="error" message="&apos;carrera&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="175" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="178" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="180" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="180" column="5" severity="error" message="El método &apos;getDetalle&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="183" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="186" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="188" column="5" severity="error" message="El método &apos;setDetalle&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="188" column="28" severity="error" message="El parámetro detalle debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="188" column="35" severity="error" message="&apos;detalle&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="191" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="194" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="196" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="196" column="5" severity="error" message="El método &apos;getFechaCreacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="199" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="201" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="202" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="204" column="5" severity="error" message="El método &apos;setFechaCreacion&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="204" column="34" severity="error" message="El parámetro fechaCreacion debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="204" column="39" severity="error" message="&apos;fechaCreacion&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="210" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="212" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="212" column="5" severity="error" message="El método &apos;getRespuestaCollection&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="216" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="219" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="221" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="221" column="5" severity="error" message="El método &apos;setRespuestaCollection&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="221" column="40" severity="error" message="El parámetro respuestaCollection debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="221" column="62" severity="error" message="&apos;respuestaCollection&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="224" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="227" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="229" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="229" column="5" severity="error" message="El método &apos;getCorreoUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="232" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="235" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="237" column="5" severity="error" message="El método &apos;setCorreoUsuario&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="237" column="34" severity="error" message="El parámetro correoUsuario debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="237" column="42" severity="error" message="&apos;correoUsuario&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="240" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="241" severity="error" message="La primera frase debería finalizar con un punto." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="245" column="5" severity="error" message="El método &apos;hashCode&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="248" column="37" severity="error" message="Evitar los condicionales en línea." source="com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"/>
+<error line="255" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="257" column="5" severity="error" message="El método &apos;equals&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="258" column="27" severity="error" message="El parámetro object debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="259" severity="error" message="El comentario coincide con el formato to-do &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="259" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="264" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="269" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="272" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="274" column="5" severity="error" message="El método &apos;toString&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="276" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="278" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="/home/naranjo/github/ClockworkProgramming/Proyecto/foro-ciencias-pumask/pumask/src/main/java/com/clockwork/pumask/modelo/AdministradorJpaController.java">
+<error line="35" column="39" severity="error" message="El parámetro emf debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="35" column="60" severity="error" message="&apos;emf&apos; oculta un campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="38" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="44" column="5" severity="error" message="El método &apos;getEntityManager&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="49" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="53" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="55" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="55" column="5" severity="error" message="El método &apos;create&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="55" column="24" severity="error" message="El parámetro administrador debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="38" severity="error" message="Se esperaba la etiqueta @param para &apos;administrador&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="55" column="60" severity="error" message="Se esperaba la etiqueta @throws para &apos;IllegalOrphanException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="55" column="84" severity="error" message="Se esperaba la etiqueta @throws para &apos;PreexistingEntityException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="59" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="64" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="76" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="87" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="96" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="103" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="105" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="105" column="5" severity="error" message="El método &apos;edit&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="105" column="22" severity="error" message="El parámetro administrador debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="105" column="36" severity="error" message="Se esperaba la etiqueta @param para &apos;administrador&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="58" severity="error" message="Se esperaba la etiqueta @throws para &apos;IllegalOrphanException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="82" severity="error" message="Se esperaba la etiqueta @throws para &apos;NonexistentEntityException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="110" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="115" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="120" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="127" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="145" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="158" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="160" column="5" severity="error" message="El método &apos;destroy&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="160" column="25" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="160" column="32" severity="error" message="Se esperaba la etiqueta @param para &apos;id&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="170" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="185" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="187" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="188" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="190" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="190" column="5" severity="error" message="El método &apos;findAdministradorEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="195" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="198" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="200" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="200" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="200" column="5" severity="error" message="El método &apos;findAdministradorEntities&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="200" column="58" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="200" column="62" severity="error" message="Se esperaba la etiqueta @param para &apos;maxResults&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="200" column="74" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="200" column="78" severity="error" message="Se esperaba la etiqueta @param para &apos;firstResult&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="205" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="209" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="211" severity="error" message="La línea es mayor de 80 caracteres." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="211" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="211" column="59" severity="error" message="El parámetro all debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="211" column="67" severity="error" message="Se esperaba la etiqueta @param para &apos;all&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="211" column="72" severity="error" message="El parámetro maxResults debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="211" column="76" severity="error" message="Se esperaba la etiqueta @param para &apos;maxResults&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="211" column="88" severity="error" message="El parámetro firstResult debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="211" column="92" severity="error" message="Se esperaba la etiqueta @param para &apos;firstResult&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="226" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="228" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="230" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="232" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="232" column="5" severity="error" message="El método &apos;findAdministrador&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="232" column="44" severity="error" message="El parámetro id debería ser final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="232" column="51" severity="error" message="Se esperaba la etiqueta @param para &apos;id&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="240" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="242" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="243" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="245" severity="error" message="Se esperaba la etiqueta @return." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="245" column="5" severity="error" message="El método &apos;getAdministradorCount&apos; no está diseñado para ser extendido - necesita ser abstracto, final o vacío." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+</checkstyle>
