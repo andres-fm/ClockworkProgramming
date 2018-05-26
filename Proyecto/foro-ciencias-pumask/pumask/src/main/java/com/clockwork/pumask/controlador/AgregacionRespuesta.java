@@ -42,16 +42,27 @@ public class AgregacionRespuesta {
         emf = EntityProvider.provider();
         jpaController = new RespuestaJpaController(emf);
         respuesta = new Respuesta();
+        respuesta.setContenido("Ingresar respuesta");
         respuesta.setLikes(0);
         respuesta.setDislikes(0);
         //respuesta.setCategoria("titulacion");
     }
 
 
+	public Respuesta getRespuesta() {
+		return respuesta;
+	}
+
+	public Pregunta obtenPregunta() {
+		FacesContext context = getCurrentInstance();
+		return ((Pregunta) context.getExternalContext().getSessionMap().get("pregunta"));
+	}
+
+
 	/**
 	 * Agrega una pregunta a la base de datos.
 	 */
-	public void agregaPregunta() {
+	public void agregaRespuesta() {
 		respuesta.setFechaPublicacion(new Date());
 		FacesContext context = getCurrentInstance();
         respuesta.setUsuarioCorreo((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
@@ -61,6 +72,16 @@ public class AgregacionRespuesta {
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Respuesta agregada exitosamente"));
 		}catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Ocurrio un error, intentar más tarde"));
+		}
+	}
+
+	public void eliminarRespuesta(Integer id) {
+		try {
+			System.out.println("Destruimos");
+			System.out.println(id);
+			jpaController.destroy(id);
+		} catch (Exception e) {
+		
 		}
 	}
 

@@ -153,15 +153,17 @@ public class AgregacionPregunta {
 		this.nuevaDir = preg;
 	}
 	
-	public String verRespuestas() {
-	    Pregunta l = jpaController.findPregunta(nuevaDir);
-	    //System.out.println(l.getContenido());
-        if (validaPregunta()) {
+	public String verRespuestas(Integer id) {
+	    //System.out.println("esto es una id");
+	    //System.out.println(id);
+	    Pregunta l = jpaController.findPregunta(id);
+	    if (l != null) {
             FacesContext context = getCurrentInstance();
             context.getExternalContext().getSessionMap().put("pregunta", l);
             return "/PreguntaIH.xhtml?faces-redirect=true";
         }
         return "/index?faces-redirect=true";
     }
+
 
 }

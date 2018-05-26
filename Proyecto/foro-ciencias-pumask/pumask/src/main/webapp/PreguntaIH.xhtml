@@ -15,7 +15,7 @@
   </h:head>
   <h:body>
 
-	<h3> Interfaz de foro </h3>
+	<h3> Respuesta </h3>
 
 	<c:choose>
 		<c:when test="#{controladorSesion.estaEnSesion()}">
@@ -37,12 +37,11 @@
         <h:panelGrid columns="2" cellpadding="5">
             
             <p:outputLabel for="respuesta" value="Respuesta" />
-            <p:inputTextarea value="#{agregacionRespuesta.respuesta.contenido}" required="false" id="respuesta" label="respuesta"
-	  		autoResize="true" maxlength="150"/>
+            <p:inputTextarea value="#{agregacionRespuesta.respuesta.contenido}" required="false" id="respuesta" label="respuesta" autoResize="true" maxlength="150"/>
         </h:panelGrid>
     </p:panel>
     <p:commandButton action="#{agregacionRespuesta.agregaRespuesta()}"
-					value="Publicar Respuesta" update="panel"/>
+					value="Publicar Respuesta" update="lista_respuestas" oncomplete="PF('agp').hide();"/>
 </h:form>
 
 
@@ -51,12 +50,20 @@
 
 
 <p:messages id="messages" autoUpdate="true"/>
-<p:panel id="Pregunta" header="#{agregacionPregunta.pregunta.contenido}">
+<p:panel id="Pregunta" header="">
   <h:panelGrid>
-    
-    <p:dataTable value="#{agregacionPregunta.obtenerRespuestas}" rows="5" paginator="true" var="respuesta">
-		<p:column headerText="Preguntas">
+    <p:dataTable id="lista_respuestas" value="#{agregacionPregunta.obtenRespuestas()}" rows="5" paginator="true" var="respuesta" paginatorPosition="bottom">
+		<p:column headerText="#{agregacionRespuesta.obtenPregunta().contenido}">
    			<h:outputText value="#{respuesta.contenido}" />
+  			<c:choose>
+				<c:when test="#{controladorSesion.esAdministrador()}">
+				<h:form>
+					<p:commandButton action="#{agregacionRespuesta.eliminarRespuesta(respuesta.idRespuesta)}" value="Eliminar Respuesta"  update="lista_respuestas" />
+				</h:form>
+				</c:when>
+				<c:otherwise>
+				</c:otherwise>
+			</c:choose>
   		</p:column>
 	</p:dataTable>
     
