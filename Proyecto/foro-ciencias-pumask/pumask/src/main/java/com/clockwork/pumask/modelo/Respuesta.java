@@ -19,6 +19,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.*;
 
 /**
  *
@@ -38,6 +39,7 @@ public class Respuesta implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_respuesta")
     private Integer idRespuesta;
@@ -68,7 +70,7 @@ public class Respuesta implements Serializable {
         this.idRespuesta = idRespuesta;
     }
 
-    public Respuesta(Integer idRespuesta, String contenido, Date fechaPublicacion, int likes, int dislikes) {
+    public Respuesta(final Integer idRespuesta, final String contenido, final Date fechaPublicacion, final int likes, final int dislikes) {
         this.idRespuesta = idRespuesta;
         this.contenido = contenido;
         this.fechaPublicacion = fechaPublicacion;
@@ -76,59 +78,59 @@ public class Respuesta implements Serializable {
         this.dislikes = dislikes;
     }
 
-    public Integer getIdRespuesta() {
+    public final Integer getIdRespuesta() {
         return idRespuesta;
     }
 
-    public void setIdRespuesta(Integer idRespuesta) {
+    public final void setIdRespuesta(final Integer idRespuesta) {
         this.idRespuesta = idRespuesta;
     }
 
-    public String getContenido() {
+    public final String getContenido() {
         return contenido;
     }
 
-    public void setContenido(String contenido) {
+    public final void setContenido(final String contenido) {
         this.contenido = contenido;
     }
 
-    public Date getFechaPublicacion() {
+    public final Date getFechaPublicacion() {
         return fechaPublicacion;
     }
 
-    public void setFechaPublicacion(Date fechaPublicacion) {
+    public final void setFechaPublicacion(final Date fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
     }
 
-    public int getLikes() {
+    public final int getLikes() {
         return likes;
     }
 
-    public void setLikes(int likes) {
+    public final void setLikes(final int likes) {
         this.likes = likes;
     }
 
-    public int getDislikes() {
+    public final int getDislikes() {
         return dislikes;
     }
 
-    public void setDislikes(int dislikes) {
+    public final void setDislikes(final int dislikes) {
         this.dislikes = dislikes;
     }
 
-    public Pregunta getIdPregunta() {
+    public final Pregunta getIdPregunta() {
         return idPregunta;
     }
 
-    public void setIdPregunta(Pregunta idPregunta) {
+    public final void setIdPregunta(final Pregunta idPregunta) {
         this.idPregunta = idPregunta;
     }
 
-    public Usuario getUsuarioCorreo() {
+    public final Usuario getUsuarioCorreo() {
         return usuarioCorreo;
     }
 
-    public void setUsuarioCorreo(Usuario usuarioCorreo) {
+    public final void setUsuarioCorreo(final Usuario usuarioCorreo) {
         this.usuarioCorreo = usuarioCorreo;
     }
 
@@ -156,5 +158,5 @@ public class Respuesta implements Serializable {
     public String toString() {
         return "com.clockwork.pumask.modelo.Respuesta[ idRespuesta=" + idRespuesta + " ]";
     }
-    
+
 }

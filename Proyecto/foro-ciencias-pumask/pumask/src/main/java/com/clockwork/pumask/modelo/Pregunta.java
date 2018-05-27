@@ -17,12 +17,15 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import javax.persistence.*;
 
 /**
  *
@@ -32,17 +35,26 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "pregunta")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Pregunta.findAll", query = "SELECT p FROM Pregunta p")
+    @NamedQuery(name = "Pregunta.findAll", query = "SELECT p FROM Pregunta p"),
+    @NamedQuery(name = "Pregunta.findByUser", query = "SELECT p FROM Pregunta p WHERE p.correoUsuario.correo = :correo")
     , @NamedQuery(name = "Pregunta.findByIdPregunta", query = "SELECT p FROM Pregunta p WHERE p.idPregunta = :idPregunta")
     , @NamedQuery(name = "Pregunta.findByCategoria", query = "SELECT p FROM Pregunta p WHERE p.categoria = :categoria")
     , @NamedQuery(name = "Pregunta.findByContenido", query = "SELECT p FROM Pregunta p WHERE p.contenido = :contenido")
     , @NamedQuery(name = "Pregunta.findByCarrera", query = "SELECT p FROM Pregunta p WHERE p.carrera = :carrera")
     , @NamedQuery(name = "Pregunta.findByDetalle", query = "SELECT p FROM Pregunta p WHERE p.detalle = :detalle")
     , @NamedQuery(name = "Pregunta.findByFechaCreacion", query = "SELECT p FROM Pregunta p WHERE p.fechaCreacion = :fechaCreacion")})
+@NamedNativeQueries(value = {
+    @NamedNativeQuery(
+            name = "encontrarPorCategoriaCarrera",
+            query = "select * from pregunta where categoria = ?1 and carrera = ?2",
+            resultClass = Pregunta.class
+    )
+})
 public class Pregunta implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_pregunta")
     private Integer idPregunta;

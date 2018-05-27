@@ -12,7 +12,7 @@ import javax.persistence.Persistence;
  *
  * @author dima
  */
-public class EntityProvider {
+public final class EntityProvider {
 
     private static EntityManagerFactory _emf;
 

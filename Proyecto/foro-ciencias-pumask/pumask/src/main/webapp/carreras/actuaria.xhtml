@@ -1,19 +1,91 @@
 <ui:composition
-        template="/WEB-INF/facelets/templates/layout.xhtml"
-        xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:ui="http://java.sun.com/jsf/facelets">
-  
-    <ui:define name="content">
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">Actuaría</h1>
-        <p>
-            Aquí va todo lo relacionado con la carrera de actuaría, como la página de todas las carreras son iguales entre sí, se puede hacer un template.
-        </p>
-      </div>
-    </div>
+	template="/WEB-INF/facelets/templates/common.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 
-  </ui:define>
-  
+
+  <ui:define name="content">
+
+  <h:head>
+    <title>Subforo Actuaría</title>
+  </h:head>
+  <h:body>
+
+	<h3> Interfaz de foro </h3>
+
+	<c:choose>
+		<c:when test="#{controladorSesion.estaEnSesion()}">
+				<h:form>
+				<p:commandButton value="Agregar Pregunta" onclick="PF('agp').show();" type="button" />
+				</h:form>
+		</c:when>
+		<c:otherwise>
+		</c:otherwise>
+	</c:choose>
+
+        
+	<p:dialog header="Agregar Pregunta" widgetVar="agp" dynamic="true" showEffect="explode" hideEffect="fold">
+
+
+<h:form>
+    <p:panel id="panel"  style="margin-bottom:10px;">
+        <p:messages id="messages" />
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:outputLabel for="pregunta" value="Pregunta: " />
+	  		<p:inputText value="#{agregacionPregunta.pregunta.contenido}" required="true" id="pregunta" label="pregunta" />	
+ 
+            <p:outputLabel for="detalles" value="Información adicional" />
+            <p:inputTextarea value="#{agregacionPregunta.pregunta.detalle}" required="false" id="detalles" label="detalles"
+	  		autoResize="true" maxlength="150"/>
+
+            <p:selectOneMenu value = "#{agregacionPregunta.pregunta.categoria}">
+				<f:selectItem itemLabel="Servicio Social" itemValue="servicio social"/>
+				<f:selectItem itemLabel="Titulación" itemValue="titulacion"/>
+			</p:selectOneMenu>
+        </h:panelGrid>
+    </p:panel>
+    <p:commandButton action="#{agregacionPregunta.agregaPregunta()}"
+					value="Agregar Pregunta" update="panel"/>
+</h:form>
+
+
+
+	</p:dialog>
+
+
+	<p:tabView>
+        <p:tab title="Titulación">
+            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasTitulacion()}" rows="5" paginator="true" var="pregunta">
+				<f:facet name="header">
+					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
+				</f:facet>
+				<p:column headerText="Preguntas">
+   				<h:form>
+   					<h:outputText value="#{pregunta.contenido}" />
+   					<p:commandButton action="#{agregacionPregunta.verRespuestas(pregunta.idPregunta)}" value="Ver Respuestas"/>
+				</h:form>
+  				</p:column>
+			</p:dataTable>
+        </p:tab>
+        <p:tab title="Servicio Social">
+            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasServicioSocial()}" rows="5" paginator="true" var="pregunta">
+				<f:facet name="header">
+					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
+				</f:facet>
+				<p:column headerText="Preguntas">
+   					<h:outputText value="#{pregunta.contenido}"/>
+  				</p:column>
+			</p:dataTable>
+        </p:tab>
+    </p:tabView>
+
+
+</h:body>
+
+</ui:define>
 
 </ui:composition>

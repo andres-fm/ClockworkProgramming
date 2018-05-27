@@ -23,6 +23,11 @@
   <artifactId>excite-bike</artifactId>
   <version>1.0.10</version>
 </dependency>
+<dependency>
+  <groupId>org.primefaces.themes</groupId>
+  <artifactId>ui-lightness</artifactId>
+  <version>1.0.10</version>
+</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -125,6 +130,14 @@
         <path>/pumask</path>
         </configuration>
     </plugin>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <configLocation>personal-checkstyle.xml</configLocation>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
