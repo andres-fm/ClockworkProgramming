@@ -69,6 +69,9 @@
    					<p:commandButton action="#{agregacionPregunta.verRespuestas(pregunta.idPregunta)}" value="Ver Respuestas"/>
 				</h:form>
   				</p:column>
+                                <p:column style="width:32px;text-align: center">
+                                    <p:commandButton  icon="ui-icon-trash" title="View"/>
+                                </p:column>
 			</p:dataTable>
         </p:tab>
         <p:tab title="Servicio Social">
@@ -79,6 +82,9 @@
 				<p:column headerText="Preguntas">
    					<h:outputText value="#{pregunta.contenido}"/>
   				</p:column>
+                                <p:column style="width:32px;text-align: center">
+                                    <p:commandButton  icon="ui-icon-trash" title="View"/>
+                               </p:column>
 			</p:dataTable>
         </p:tab>
     </p:tabView>
