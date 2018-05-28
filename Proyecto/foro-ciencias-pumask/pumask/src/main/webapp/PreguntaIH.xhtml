@@ -56,13 +56,13 @@
 		<p:column headerText="#{agregacionRespuesta.obtenPregunta().contenido}">
    			<h:outputText value="#{respuesta.contenido}" />
   			<c:choose>
-				<c:when test="#{controladorSesion.esAdministrador()}">
+				<c:when test = "#{controladorSesion.esAdministrador()}">
 				<h:form>
 					<p:commandButton action="#{agregacionRespuesta.eliminarRespuesta(respuesta.idRespuesta)}" value="Eliminar Respuesta"  update="lista_respuestas" />
 				</h:form>
 				</c:when>
-				<c:otherwise>
-				</c:otherwise>
+                <c:otherwise>
+                </c:otherwise>
 			</c:choose>
   		</p:column>
 	</p:dataTable>

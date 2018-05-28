@@ -31,10 +31,12 @@ import javax.persistence.*;
 @NamedQueries({
     @NamedQuery(name = "Respuesta.findAll", query = "SELECT r FROM Respuesta r")
     , @NamedQuery(name = "Respuesta.findByIdRespuesta", query = "SELECT r FROM Respuesta r WHERE r.idRespuesta = :idRespuesta")
+    , @NamedQuery(name = "Respuesta.findAnswersByUsersss", query = "SELECT r FROM Respuesta r WHERE r.usuarioCorreo.correo = :correo")
     , @NamedQuery(name = "Respuesta.findByContenido", query = "SELECT r FROM Respuesta r WHERE r.contenido = :contenido")
     , @NamedQuery(name = "Respuesta.findByFechaPublicacion", query = "SELECT r FROM Respuesta r WHERE r.fechaPublicacion = :fechaPublicacion")
     , @NamedQuery(name = "Respuesta.findByLikes", query = "SELECT r FROM Respuesta r WHERE r.likes = :likes")
     , @NamedQuery(name = "Respuesta.findByDislikes", query = "SELECT r FROM Respuesta r WHERE r.dislikes = :dislikes")})
+
 public class Respuesta implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -76,6 +78,10 @@ public class Respuesta implements Serializable {
         this.fechaPublicacion = fechaPublicacion;
         this.likes = likes;
         this.dislikes = dislikes;
+    }
+
+    public boolean equals(Respuesta otra){
+        return this.idRespuesta == otra.idRespuesta;
     }
 
     public final Integer getIdRespuesta() {
