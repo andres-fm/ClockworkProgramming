@@ -1,0 +1,33 @@
+<ui:composition
+	template="/WEB-INF/facelets/templates/common.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+
+  <ui:define name="content">
+
+  <h:head>
+    <title>Resultados</title>
+  </h:head>
+<h:body>
+
+	<h3>Resultados para #{busquedaPregunta.query}</h3>
+
+	<p:tabView>
+        <p:tab title="Titulación">
+            <p:dataTable value="#{busquedaPregunta.getResults()}" rows="5" paginator="true" var="pregunta">
+				<p:column headerText="Preguntas">
+   					<h:outputText value="#{pregunta.contenido}" />
+  				</p:column>
+			</p:dataTable>
+        </p:tab>
+    </p:tabView>
+</h:body>
+
+    </ui:define>
+
+</ui:composition>

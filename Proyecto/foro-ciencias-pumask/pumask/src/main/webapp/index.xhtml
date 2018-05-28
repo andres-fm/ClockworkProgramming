@@ -27,6 +27,20 @@
         </div>
       </section>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h:form>
+              <div class="form-group">
+                <label for="search">Buscar</label>
+                <h:inputText type="text" class="form-control" id="search" binding="#{searchInput}"></h:inputText>
+              </div>
+              <button type="submit" class="btn btn-primary" actionListener="#{busquedaPregunta.buscarPregunta(searchInput.value)}">Buscar</button>
+            </h:form>
+          </div>
+        </div>
+      </div>
+
       <div class="album py-5 bg-light">
         <div class="container">
 
