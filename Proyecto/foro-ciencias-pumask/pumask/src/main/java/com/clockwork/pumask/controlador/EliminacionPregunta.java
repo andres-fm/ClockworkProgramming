@@ -81,7 +81,7 @@ public class EliminacionPregunta {
                 jpaRespuesta.destroy(r.getIdRespuesta());
             jpaController.destroy(pregunta.getIdPregunta());
         } catch(Exception e) {
-        
+        	System.out.println(e);
         }
     }
 

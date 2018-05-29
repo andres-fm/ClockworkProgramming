@@ -64,7 +64,19 @@
 					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
 				</f:facet>
 				<p:column headerText="Preguntas">
+   				<h:form>
    					<h:outputText value="#{pregunta.contenido}" />
+   					<p:commandButton action="#{agregacionPregunta.verRespuestas(pregunta.idPregunta)}" value="Ver Respuestas"/>
+				<c:choose>
+					<c:when test = "#{controladorSesion.esAdministrador()}">
+						<h:form>
+							<p:commandButton action="#{eliminacionPregunta.eliminaPregunta(pregunta)}" value="Eliminar Pregunta"/>
+						</h:form>
+					</c:when>
+                			<c:otherwise>
+                			</c:otherwise>
+				</c:choose>
+				</h:form>
   				</p:column>
 			</p:dataTable>
         </p:tab>
@@ -73,7 +85,7 @@
 				<f:facet name="header">
 					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
 				</f:facet>
-				<p:column headerText="Preguntas" >
+				<p:column headerText="Preguntas">
    					<h:outputText value="#{pregunta.contenido}"/>
   				</p:column>
 			</p:dataTable>
