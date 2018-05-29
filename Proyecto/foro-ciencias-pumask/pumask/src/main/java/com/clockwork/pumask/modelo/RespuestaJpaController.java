@@ -196,5 +196,19 @@ public class RespuestaJpaController implements Serializable {
             em.close();
         }
     }
-
+    
+    /**
+     * Obtiene las respuestas del usuario con el correo <correo> para mostrarlas.
+     * @param correo correo del usuario con la sesión actual.
+     * @return las respuestas del usuario con el correo <correo>
+     */
+    public List<Respuesta> obtenRespuestasUsuario(String correo) {
+	System.out.println("\n\n\n\n\n\n\n\n");
+	System.out.println(correo);
+	System.out.println("\n\n\n\n\n\n\n\n");
+        EntityManager em = getEntityManager();
+        Query q = em.createNamedQuery("Respuesta.findAnswersByUsersss")
+            .setParameter("correo", correo);
+        return (List<Respuesta>)q.getResultList();
+    }
 }

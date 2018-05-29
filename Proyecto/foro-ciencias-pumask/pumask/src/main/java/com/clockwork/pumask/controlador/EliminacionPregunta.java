@@ -11,6 +11,7 @@ import com.clockwork.pumask.modelo.Pregunta;
 import com.clockwork.pumask.modelo.Respuesta;
 import com.clockwork.pumask.modelo.PreguntaJpaController;
 import com.clockwork.pumask.modelo.RespuestaJpaController;
+import com.clockwork.pumask.controlador.ControladorSesion;
 import java.util.Locale;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -32,6 +33,7 @@ public class EliminacionPregunta {
     private EntityManagerFactory emf;
     private PreguntaJpaController jpaController;
     private RespuestaJpaController jpaRespuesta;
+    private ControladorSesion miSesion;
     private Usuario usuario;
 	private Pregunta pregunta;
 
@@ -43,6 +45,7 @@ public class EliminacionPregunta {
         emf = EntityProvider.provider();
         jpaController = new PreguntaJpaController(emf);
         jpaRespuesta = new RespuestaJpaController(emf);
+        miSesion = new ControladorSesion();
     }
 
     /**
@@ -89,5 +92,14 @@ public class EliminacionPregunta {
 	public Pregunta getPregunta() {
 		return pregunta;
 	}
+
+    /**
+    * Regresa si el usuario actual tiene permisos de eliminacion.
+    * @return la satisfacibilidad.
+    */
+    public boolean puedeEliminar(Pregunta pregunta){
+        return miSesion.esAdministrador() || miSesion.getUsuario().getPreguntaCollection().contains(pregunta);
+    }
+
 
 }
