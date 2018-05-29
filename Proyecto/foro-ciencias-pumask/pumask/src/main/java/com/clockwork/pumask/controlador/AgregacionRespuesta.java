@@ -77,8 +77,6 @@ public class AgregacionRespuesta {
 
 	public void eliminarRespuesta(Integer id) {
 		try {
-			System.out.println("Destruimos");
-			System.out.println(id);
 			jpaController.destroy(id);
 		} catch (Exception e) {
 		

@@ -115,6 +115,10 @@ public class ControladorSesion {
 	return "/secured/mi_perfil.xhtml?faces-redirect=true";
     }
 
+    public String regresar(){
+	return "/index.xhtml?faces-redirect=true";
+    }
+
 
 		/**
 	 * Nos dice si el usuario en la sesion actual es administrador. 

@@ -203,9 +203,6 @@ public class RespuestaJpaController implements Serializable {
      * @return las respuestas del usuario con el correo <correo>
      */
     public List<Respuesta> obtenRespuestasUsuario(String correo) {
-	System.out.println("\n\n\n\n\n\n\n\n");
-	System.out.println(correo);
-	System.out.println("\n\n\n\n\n\n\n\n");
         EntityManager em = getEntityManager();
         Query q = em.createNamedQuery("Respuesta.findAnswersByUsersss")
             .setParameter("correo", correo);

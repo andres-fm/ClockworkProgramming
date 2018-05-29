@@ -153,8 +153,6 @@ public class AgregacionPregunta {
 	}
 	
 	public String verRespuestas(Integer id) {
-	    //System.out.println("esto es una id");
-	    //System.out.println(id);
 	    Pregunta l = jpaController.findPregunta(id);
 	    if (l != null) {
             FacesContext context = getCurrentInstance();

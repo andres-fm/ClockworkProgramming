@@ -8,9 +8,11 @@ import com.clockwork.pumask.modelo.EntityProvider;
 import com.clockwork.pumask.modelo.Usuario;
 import com.clockwork.pumask.modelo.Administrador;
 import com.clockwork.pumask.modelo.Pregunta;
+import com.clockwork.pumask.modelo.Respuesta;
 import com.clockwork.pumask.modelo.UsuarioJpaController;
 import com.clockwork.pumask.modelo.AdministradorJpaController;
 import com.clockwork.pumask.modelo.PreguntaJpaController;
+import com.clockwork.pumask.modelo.RespuestaJpaController;
 import java.util.Locale;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -33,6 +35,7 @@ public class EliminacionUsuario {
     private EntityManagerFactory emf;
     private AdministradorJpaController administradorJpa;
     private PreguntaJpaController preguntaJpa;
+    private RespuestaJpaController respuestaJpa;
     private UsuarioJpaController usuarioJpa;
     private Usuario usuario;
 
@@ -45,6 +48,7 @@ public EliminacionUsuario() {
     administradorJpa = new AdministradorJpaController(emf);
     usuarioJpa = new UsuarioJpaController(emf);
     preguntaJpa = new PreguntaJpaController(emf);
+    respuestaJpa = new RespuestaJpaController(emf);
     FacesContext context = getCurrentInstance();
     usuario = ((Usuario) context.getExternalContext().getSessionMap().get("usuario"));
     }
@@ -73,12 +77,17 @@ public EliminacionUsuario() {
     public void eliminaUsuario(Usuario us){
         try{
             for(Pregunta p: us.getPreguntaCollection()){
+		for(Respuesta r: p.getRespuestaCollection()){
+		    respuestaJpa.destroy(r.getIdRespuesta());
+		}
                 preguntaJpa.destroy(p.getIdPregunta());
             }
             usuarioJpa.destroy(us.getCorreo());
             FacesContext.getCurrentInstance().addMessage(null
                       , new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuario eliminado exitosamente", ""));
         }catch(Exception e){
+	    System.out.println("Error al eliminar usuario");
+	    System.out.println(e);
             FacesContext.getCurrentInstance().addMessage(null
                       , new FacesMessage(FacesMessage.SEVERITY_ERROR, "Ocurrió un error al intentar eliminar, intente más tarde", ""));
         }
