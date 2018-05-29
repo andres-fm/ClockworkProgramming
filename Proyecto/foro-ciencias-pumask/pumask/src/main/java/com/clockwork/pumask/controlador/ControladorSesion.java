@@ -14,6 +14,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManagerFactory;
+import javax.faces.application.FacesMessage;
 
 import static javax.faces.context.FacesContext.getCurrentInstance;
 
@@ -70,7 +71,9 @@ public class ControladorSesion {
             context.getExternalContext().getSessionMap().put("usuario", l);
             return "/index?faces-redirect=true";
         }
-        return "/index?faces-redirect=true";
+        FacesContext.getCurrentInstance().addMessage(null
+                      , new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuario o contraseña incorrectos", ""));
+        return "";
     }
 
     //Se encarga de salir de la sesion actual, te redirige al index una vez que se sale de la sesion
