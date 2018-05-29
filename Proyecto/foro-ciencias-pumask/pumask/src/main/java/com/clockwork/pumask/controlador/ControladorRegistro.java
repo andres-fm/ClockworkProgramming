@@ -52,6 +52,7 @@ public class ControladorRegistro {
 		confirmacion = "";
 		emf = EntityProvider.provider();
 		usuarioJpa = new UsuarioJpaController(emf);
+		fotografia = null;
 	}
 
 	/**
