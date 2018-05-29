@@ -15,6 +15,8 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManagerFactory;
 import javax.faces.application.FacesMessage;
+import org.primefaces.model.ByteArrayContent;
+import org.primefaces.model.StreamedContent;
 
 import static javax.faces.context.FacesContext.getCurrentInstance;
 
@@ -101,6 +103,20 @@ public class ControladorSesion {
         FacesContext context = getCurrentInstance();
         return (Usuario) context.getExternalContext().getSessionMap().get("usuario");
     }
+
+
+	public StreamedContent getMiFoto() {
+		FacesContext context = getCurrentInstance();
+        Usuario l = (Usuario) context.getExternalContext().getSessionMap().get("usuario");
+        if (l != null) {
+        	Usuario bueno = jpaController.findUsuario(l.getCorreo());
+        	if (l != null && bueno.getUrlAvatar() != null) {
+        		System.out.println("La imagen existe y la regresamos");
+        		return new ByteArrayContent(bueno.getUrlAvatar());
+        	}
+        }
+        return null;
+	}
 
     //Funcion auxiliar que te dirige a la forma de iniciar sesion
     public String formaIniciarSesion() {

@@ -40,6 +40,10 @@
 					  <p:password id="pwd2" value="#{controladorRegistro.confirmacion}" label="Password 2" required="true" />
 				      <p:message for="pwd2" id="msgpwd2" display="icon" />
 
+					  <p:outputLabel for="img" value="Imagen Perfil" />
+					  <p:fileUpload id="img" value="#{controladorRegistro.fotografia}" mode="simple" skinSimple="true" 
+					  						fileUploadListener="#{controladorRegistro.fileUploadListener}"/>
+					  
 				  </h:panelGrid>
 				  <!-- para la validacion de las contraseñas update='matchGrid'-->
 				  <p:commandButton value="Registrar" update="panel" actionListener="#{controladorRegistro.agregaUsuario()}" icon="ui-icon-check" />

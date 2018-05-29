@@ -13,6 +13,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.NamedNativeQueries;
@@ -64,7 +65,8 @@ public class Usuario implements Serializable {
     @Column(name = "contrasenia")
     private String contrasenia;
     @Column(name = "url_avatar")
-    private String urlAvatar;
+    @Lob
+    private byte[] urlAvatar;
     @Basic(optional = false)
     @Column(name = "fecha_creacion")
     @Temporal(TemporalType.DATE)
@@ -114,11 +116,11 @@ public class Usuario implements Serializable {
         this.contrasenia = contrasenia;
     }
 
-    public String getUrlAvatar() {
+    public byte[] getUrlAvatar() {
         return urlAvatar;
     }
 
-    public void setUrlAvatar(String urlAvatar) {
+    public void setUrlAvatar(byte[] urlAvatar) {
         this.urlAvatar = urlAvatar;
     }
 
