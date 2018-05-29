@@ -1,57 +1,64 @@
-<ui:composition
-    template="/WEB-INF/facelets/templates/layout.xhtml"
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://xmlns.jcp.org/jsf/html"
-    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-    xmlns:p="http://primefaces.org/ui">
-
+<ui:composition template="/WEB-INF/facelets/templates/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
 
   <ui:define name="content">
-		  <h:head>
-			<title>Registro</title>
-		  </h:head>
-		  <h:body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Formulario de registro</h1> <br/>
 
-			<h1>PumAsk</h1> <br/>
+        <h:form id="altaForm" enctype="multipart/form-data">
+          <table>
+            <tr>
+              <td><p:messages id="messages" autoUpdate="true" closable="true" /></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>Usuario</td>
+              <td><p:inputText value="#{controladorRegistro.usuario.nombreUsuario}" required="true" id="Username" size="20"/></td>
+            </tr>
+            <tr>
+              <td>Correo</td>
+              <td>
+                <p:inputText value="#{controladorRegistro.usuario.correo}" required="true" id="email" size="20"
+                             validatorMessage="El correo no es valido">
+                  <f:validateRegex pattern="[\w\.-_]*[a-zA-Z0-9_]@ciencias\.unam\.mx" />
+                </p:inputText>
+                <p:message for="email" id="emailMsg"/>
+              </td>
+            </tr>
+            <tr>
+              <td>Contraseña</td>
+              <td><p:password value="#{controladorRegistro.usuario.contrasenia}" required="true" feedback="true" id="Password" size="20"/></td>
+            </tr>
+            <tr>
+              <td>Confirmar Contraseña</td>
+              <td><p:password value="#{controladorRegistro.confirmacion}" required="true" feedback="true" id="ConfirmPassword" size="20"/></td>
+            </tr>
+            <tr>
+              <td>Fotografía</td>
+              <td><p:fileUpload value="#{controladorRegistro.fotografia}" mode="simple" skinSimple="true"
+                                fileUploadListener="#{controladorRegistro.fileUploadListener}"/></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <p:commandButton action="#{controladorRegistro.agregaUsuario()}" value="Registrar" ajax="false"/>
+              </td>
+              <td>
+                <p:commandButton value="Reset" update="altaForm" process="@this"  >
+                  <p:resetInput target="altaForm" />
+                </p:commandButton>
+              </td>
+            </tr>
+          </table>
+        </h:form>
 
-			<h:form>
-			  <p:panel id="panel" header="Registro">
-
-				  <p:messages id="msgs" />
-
-				  <h:panelGrid columns="3" cellpadding="5" layout="grid">
-
-					  <p:outputLabel for="firstname" value="Nombre de Usuario:" />
-					  <p:inputText id="firstname" value="#{controladorRegistro.usuario.nombreUsuario}" required="true" label="Firstname">
-					  </p:inputText>
-					  <p:message for="firstname" display="icon" />
-
-					  <p:outputLabel for="lastname" value="Correo:" />
-					  <p:inputText id="lastname" value="#{controladorRegistro.usuario.correo}" label="Lastname" required="true">
-						  <p:ajax update="msgLastname" event="keyup" />
-					  </p:inputText>
-					  <p:message for="lastname" id="msgLastname" display="icon" />
-
-					  <p:outputLabel for="pwd1" value="Contraseña: *" />
-					  <p:password id="pwd1" value="#{controladorRegistro.usuario.contrasenia}" match="pwd2" label="Password 1" required="true" />
-					  <p:message for="pwd1" id="msgpwd1" display="icon" />
-
-					  <p:outputLabel for="pwd2" value="Confirmar Contraseña: *" />
-					  <p:password id="pwd2" value="#{controladorRegistro.confirmacion}" label="Password 2" required="true" />
-				      <p:message for="pwd2" id="msgpwd2" display="icon" />
-
-					  <p:outputLabel for="img" value="Imagen Perfil" />
-					  <p:fileUpload id="img" value="#{controladorRegistro.fotografia}" mode="simple" skinSimple="true" 
-					  						fileUploadListener="#{controladorRegistro.fileUploadListener}"/>
-					  
-				  </h:panelGrid>
-				  <!-- para la validacion de las contraseñas update='matchGrid'-->
-				  <p:commandButton value="Registrar" update="panel" actionListener="#{controladorRegistro.agregaUsuario()}" icon="ui-icon-check" />
-			  </p:panel>
-			</h:form>
-
-		  </h:body>
+      </div>
+    </div>
   </ui:define>
 
 </ui:composition>
-

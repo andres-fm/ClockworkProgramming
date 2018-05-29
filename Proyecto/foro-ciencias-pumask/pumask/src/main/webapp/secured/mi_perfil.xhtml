@@ -32,7 +32,7 @@
                       <p>Soy un usuario de la aplicación PumAsk.</p>
                     </c:when>
                     <c:when test="#{controladorSesion.usuario.urlAvatar != null}">
-                        <img src="#{controladorSesion.usuario.urlAvatar}"></img>
+                        <p:graphicImage value="#{controladorSesion.miFoto}" width="200" height="200"/>
                         <p>Soy un usuario de la aplicación PumAsk.</p>
                     </c:when>
                   </c:choose>
