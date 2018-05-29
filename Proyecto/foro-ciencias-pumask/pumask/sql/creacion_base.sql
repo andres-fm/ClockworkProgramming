@@ -13,7 +13,7 @@ CREATE TABLE usuario (
     correo             text CONSTRAINT llave_prim_usuario PRIMARY KEY,
     nombre_usuario     varchar(30) UNIQUE NOT NULL,
     contrasenia        text NOT NULL,
-    url_avatar         text,
+    url_avatar         bytea,
     fecha_creacion     date NOT NULL,
     CONSTRAINT correo_valido CHECK (correo ~* '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+[.][A-Za-z]+$')
 );
