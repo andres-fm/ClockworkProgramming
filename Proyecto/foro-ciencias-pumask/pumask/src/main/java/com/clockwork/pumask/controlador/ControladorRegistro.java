@@ -150,7 +150,7 @@ public class ControladorRegistro {
             usuario = null;
 			confirmacion = null;	
         }
-        return null;
+        return "/index.xhtml?faces-redirect=true";
     }
     
     
