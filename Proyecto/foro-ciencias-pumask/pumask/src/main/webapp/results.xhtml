@@ -16,7 +16,11 @@
 <h:body>
 
 	<h3>Resultados para #{busquedaPregunta.query}</h3>
-
+	<h:form id="regresar">
+                           <h:commandButton action="#{controladorSesion.regresar()}"
+                                            value="Regresar"
+                                            class="btn btn-outline-success my-2 my-sm-0"/>
+                        </h:form>
 	<p:tabView>
         <p:tab title="Titulación">
             <p:dataTable value="#{busquedaPregunta.getResults()}" rows="5" paginator="true" var="pregunta">

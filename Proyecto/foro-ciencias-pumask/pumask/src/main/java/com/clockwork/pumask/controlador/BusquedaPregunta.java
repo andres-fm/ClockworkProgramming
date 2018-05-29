@@ -45,15 +45,14 @@ public class BusquedaPregunta {
     * Agrega una pregunta
     * @return Un mensaje dependiendo de qué ocurrió en la transacción.
     */
-	public void buscarPregunta(String q) {
+	public String buscarPregunta(String q) {
 		try {
             this.query = q;
 			this.results = jpaController.obtenPreguntasPorPalabrasClave(q);
-            if(this.results.size() > 0)
-                FacesContext.getCurrentInstance().getExternalContext().redirect("results.xhtml");
 		} catch (Exception e) {
             e.printStackTrace();
 		}
+		return "/results.xhtml?faces-redirect=true";
 	}
 
     public String getQuery() {

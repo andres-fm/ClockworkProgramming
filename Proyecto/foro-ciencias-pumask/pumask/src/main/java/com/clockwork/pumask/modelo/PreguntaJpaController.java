@@ -16,6 +16,7 @@ import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Arrays;
 import java.util.Hashtable;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -262,14 +263,14 @@ public class PreguntaJpaController implements Serializable {
         Hashtable<Pregunta, Pregunta> results = new Hashtable();
         for(String keyWord : keyWords) {
             Query q = em.createQuery("SELECT p FROM Pregunta p WHERE p.contenido LIKE :keyword")
-                    .setParameter("keyword", keyWord);
+                    .setParameter("keyword", "%"+keyWord+"%");
             List<Pregunta> tempResults = q.getResultList();
             for(Pregunta p : tempResults) {
                 results.put(p, p);
             }
         }
         ArrayList<Pregunta> listaFinal = new ArrayList();
-        for(Pregunta p : results.values()) {
+        for(Pregunta p : results.values()){
             listaFinal.add(p);
         }
         return listaFinal;

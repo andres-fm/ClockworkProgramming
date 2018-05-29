@@ -35,7 +35,11 @@
                 <label for="search">Buscar</label>
                 <h:inputText type="text" class="form-control" id="search" binding="#{searchInput}"></h:inputText>
               </div>
-              <button type="submit" class="btn btn-primary" actionListener="#{busquedaPregunta.buscarPregunta(searchInput.value)}">Buscar</button>
+	      <h:form id="buscar">
+                           <h:commandButton action="#{busquedaPregunta.buscarPregunta(searchInput.value)}"
+                                            value="Buscar"
+                                            class="btn btn-outline-success my-2 my-sm-0"/>
+              </h:form>
             </h:form>
           </div>
         </div>

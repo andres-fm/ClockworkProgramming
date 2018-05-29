@@ -115,6 +115,16 @@ public class ControladorSesion {
 	return "/secured/mi_perfil.xhtml?faces-redirect=true";
     }
 
+    public String regresar(){
+	return "/index.xhtml?faces-redirect=true";
+	/*try{
+		FacesContext.getCurrentInstance().getExternalContext().redirect("index.xhtml");
+	}catch(Exception e){
+		System.out.println("error al regresar");
+		System.out.println(e);
+	}*/
+    }
+
 
 		/**
 	 * Nos dice si el usuario en la sesion actual es administrador. 
