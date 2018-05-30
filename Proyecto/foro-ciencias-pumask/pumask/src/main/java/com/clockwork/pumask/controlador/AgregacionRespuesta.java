@@ -69,6 +69,7 @@ public class AgregacionRespuesta {
         respuesta.setIdPregunta((Pregunta) context.getExternalContext().getSessionMap().get("pregunta"));
         try {
 			jpaController.create(respuesta);
+			respuesta.setContenido("Ingresar respuesta");
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Respuesta agregada exitosamente"));
 		}catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Ocurrio un error, intentar más tarde"));

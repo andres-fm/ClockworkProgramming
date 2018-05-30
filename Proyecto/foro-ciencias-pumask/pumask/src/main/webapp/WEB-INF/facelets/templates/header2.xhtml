@@ -30,14 +30,24 @@
 		        		</f:facet>
 		        		<f:facet name="right">
 		        		
-		        		<p:graphicImage value="#{controladorSesion.miFoto}" width="48" height="48"/>
+		        		<p:graphicImage value="#{controladorSesion.miFoto}" width="45" height="45"/>
+		        		<span class="ui-separator">
+                				<span class="ui-icon ui-icon-grip-dotted-vertical" />
+            			</span>
 		        		<p:button value="#{controladorSesion.usuario.nombreUsuario}" disable="true"/>
 		        		<span class="ui-separator">
                 				<span class="ui-icon ui-icon-grip-dotted-vertical" />
             			</span>
-		        		<p:menuButton value="Ajustes" icon="fa-arrow-down">
-            					<p:menuitem value="Mi perfil" url="/secured/mi_perfil.xhtml"/>
+		        		<p:menuButton value="Opciones" icon="fa-arrow-down">
+		        		
+            				<p:menuitem value="Mi perfil" url="/secured/mi_perfil.xhtml"/>
+            			<c:choose>
+			        		<c:when test = "#{controladorSesion.esAdministrador()}">
 			        			<p:menuitem value="Ajustes" url="/secured/ajustes.xhtml"/>
+			        		</c:when>
+                			<c:otherwise>
+                			</c:otherwise>
+						</c:choose>
 			        			<p:menuitem value="Salir" action="#{controladorSesion.cerrarSesion()}" />
        					</p:menuButton>
 		        		</f:facet>
