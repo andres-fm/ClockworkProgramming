@@ -70,7 +70,7 @@
 				<c:choose>
 					<c:when test = "#{controladorSesion.esAdministrador()}">
 						<h:form>
-							<p:commandButton action="#{eliminacionPregunta.eliminaPregunta(pregunta)}" value="Eliminar Pregunta"/>
+							<p:commandButton action="#{eliminacionPregunta.eliminaPregunta(pregunta)}" value="Eliminar Pregunta" update="vitas"/>
 						</h:form>
 					</c:when>
                 			<c:otherwise>
