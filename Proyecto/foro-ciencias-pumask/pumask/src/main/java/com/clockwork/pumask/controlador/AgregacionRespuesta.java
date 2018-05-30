@@ -42,7 +42,7 @@ public class AgregacionRespuesta {
         emf = EntityProvider.provider();
         jpaController = new RespuestaJpaController(emf);
         respuesta = new Respuesta();
-        respuesta.setContenido("Ingresar respuesta");
+        respuesta.setContenido("");
         respuesta.setLikes(0);
         respuesta.setDislikes(0);
         //respuesta.setCategoria("titulacion");
@@ -69,7 +69,7 @@ public class AgregacionRespuesta {
         respuesta.setIdPregunta((Pregunta) context.getExternalContext().getSessionMap().get("pregunta"));
         try {
 			jpaController.create(respuesta);
-			respuesta.setContenido("Ingresar respuesta");
+			respuesta.setContenido("");
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Respuesta agregada exitosamente"));
 		}catch (Exception e) {
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Ocurrio un error, intentar más tarde"));

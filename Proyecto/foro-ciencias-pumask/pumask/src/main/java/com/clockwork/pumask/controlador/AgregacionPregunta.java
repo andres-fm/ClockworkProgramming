@@ -13,7 +13,7 @@ import com.clockwork.pumask.modelo.PreguntaJpaController;
 import java.util.Locale;
 import java.util.Collection;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.RequestScoped;
 import javax.faces.application.FacesMessage;
 import javax.persistence.EntityManagerFactory;
 import java.util.List;
@@ -26,7 +26,7 @@ import static javax.faces.context.FacesContext.getCurrentInstance;
  * @author dimitri
  */
 @ManagedBean
-@SessionScoped
+@RequestScoped
 public class AgregacionPregunta {
 
     private EntityManagerFactory emf;

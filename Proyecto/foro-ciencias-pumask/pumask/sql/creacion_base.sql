@@ -83,7 +83,7 @@ $$ language sql stable;
 
 insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('micorreo@ciencias.unam.mx', 'oscar', 'password', 'no sirve este url', '2018-03-31');
 insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('user@ciencias.unam.mx', 'matt', '12345', 'no sirve este url', '2018-03-31');
-insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('admin@ciencias.unam.mx', 'El bueno', '12345', 'no sirve este url', '2018-03-31');
+insert into usuario (correo, nombre_usuario, contrasenia, url_avatar, fecha_creacion) values ('admin@ciencias.unam.mx', 'Admin', '12345', 'no sirve este url', '2018-03-31');
 insert into administrador (correo_admin) values ('admin@ciencias.unam.mx');
 
 

@@ -11,7 +11,7 @@
   <ui:define name="content">
 
   <h:head>
-    <title>Subforo Ciencias de la Computación</title>
+    <title>Subforo Ciencias de la computación</title>
   </h:head>
   <h:body>
 
@@ -49,7 +49,7 @@
         </h:panelGrid>
     </p:panel>
     <p:commandButton action="#{agregacionPregunta.agregaPregunta()}"
-					value="Agregar Pregunta" update="panel"/>
+					value="Agregar Pregunta" update="vitas" oncomplete="PF('agp').hide();"/>
 </h:form>
 
 
@@ -57,15 +57,22 @@
 	</p:dialog>
 
 
-	<p:tabView>
+	<p:tabView id="vitas">
         <p:tab title="Titulación">
-            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasTitulacion()}" rows="5" paginator="true" var="pregunta">
+            <p:dataTable id="lista_preguntaT" value="#{agregacionPregunta.obtenerPreguntasTitulacion()}" rows="5" paginator="true" var="pregunta" paginatorPosition="bottom">
 				<f:facet name="header">
 					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
 				</f:facet>
 				<p:column headerText="Preguntas">
+   				<p:panel id="panelWithMenu" header="#{pregunta.contenido}"
+						 widgetVar="panel" >
+					<h:form>
+					<h:outputText value="#{pregunta.detalle}" />
+					</h:form>
+				  
+				</p:panel>
+   				
    				<h:form>
-   					<h:outputText value="#{pregunta.contenido}" />
    					<p:commandButton action="#{agregacionPregunta.verRespuestas(pregunta.idPregunta)}" value="Ver Respuestas"/>
 				<c:choose>
 					<c:when test = "#{controladorSesion.esAdministrador()}">
@@ -81,12 +88,33 @@
 			</p:dataTable>
         </p:tab>
         <p:tab title="Servicio Social">
-            <p:dataTable value="#{agregacionPregunta.obtenerPreguntasServicioSocial()}" rows="5" paginator="true" var="pregunta">
+        	
+            <p:dataTable id="lista_preguntaSS" value="#{agregacionPregunta.obtenerPreguntasServicioSocial()}" rows="5" paginator="true" var="pregunta" paginatorPosition="bottom">
 				<f:facet name="header">
 					<h:outputText value="#{agregacionPregunta.pregunta.carrera}" />
 				</f:facet>
 				<p:column headerText="Preguntas">
-   					<h:outputText value="#{pregunta.contenido}"/>
+				<p:panel id="panelWithMenu" header="#{pregunta.contenido}"
+						 widgetVar="panel" >
+					<h:form>
+					<h:outputText value="#{pregunta.detalle}" />
+					</h:form>
+				  
+				</p:panel>
+   				
+   				<h:form>
+   					<p:commandButton action="#{agregacionPregunta.verRespuestas(pregunta.idPregunta)}" value="Ver Respuestas"/>
+				<c:choose>
+					<c:when test = "#{controladorSesion.esAdministrador()}">
+						<h:form>
+							<p:commandButton action="#{eliminacionPregunta.eliminaPregunta(pregunta)}" value="Eliminar Pregunta" update="vitas"/>
+						</h:form>
+					</c:when>
+                			<c:otherwise>
+                			</c:otherwise>
+				</c:choose>
+				</h:form>
+   				
   				</p:column>
 			</p:dataTable>
         </p:tab>

@@ -137,8 +137,8 @@ public class ControladorRegistro {
                 	System.out.println("Guardamos imagen");
 				}
 				System.out.println("Vamos a enviar el correo");
-				enviarCorreoConfirmacion(usuario.getCorreo(), sb.toString());
 			    usuarioJpa.create(usuario);
+			    enviarCorreoConfirmacion(usuario.getCorreo(), sb.toString());
             }catch(Exception e){
                 FacesContext.getCurrentInstance().addMessage(null
                       , new FacesMessage(FacesMessage.SEVERITY_ERROR, "Fallo de registro: el usuario ya existe", ""));

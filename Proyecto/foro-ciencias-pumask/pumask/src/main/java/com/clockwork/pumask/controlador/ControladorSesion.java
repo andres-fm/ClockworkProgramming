@@ -111,7 +111,6 @@ public class ControladorSesion {
         if (l != null) {
         	Usuario bueno = jpaController.findUsuario(l.getCorreo());
         	if (l != null && bueno.getUrlAvatar() != null) {
-        		System.out.println("La imagen existe y la regresamos");
         		return new ByteArrayContent(bueno.getUrlAvatar());
         	}
         }

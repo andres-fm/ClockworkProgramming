@@ -37,7 +37,7 @@
         <h:panelGrid columns="2" cellpadding="5">
             
             <p:outputLabel for="respuesta" value="Respuesta" />
-            <p:inputTextarea value="#{agregacionRespuesta.respuesta.contenido}" required="false" id="respuesta" label="respuesta" autoResize="true" maxlength="150"/>
+            <p:inputTextarea value="#{agregacionRespuesta.respuesta.contenido}" required="true" id="respuesta" label="respuesta" autoResize="true" maxlength="150"/>
         </h:panelGrid>
     </p:panel>
     <p:commandButton action="#{agregacionRespuesta.agregaRespuesta()}"
