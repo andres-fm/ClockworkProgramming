@@ -122,9 +122,9 @@ public class ControladorRegistro {
                       , new FacesMessage(FacesMessage.SEVERITY_ERROR, "Fallo de registro: Las contraseñas deben coincidir", ""));
         } else {
         	try{
-        		MessageDigest md = MessageDigest.getInstance("MD5");
-            	md.update(usuario.getCorreo().getBytes());
-            	byte[] digest = md.digest();
+        		MessageDigest cif = MessageDigest.getInstance("MD5");
+            	cif.update(usuario.getCorreo().getBytes());
+            	byte[] digest = cif.digest();
             	StringBuffer sb = new StringBuffer();
             	for (byte b : digest) {
             	    sb.append(String.format("%02x", b & 0xff));
@@ -153,9 +153,13 @@ public class ControladorRegistro {
         return "/index.xhtml?faces-redirect=true";
     }
     
-    
-    private void enviarCorreoConfirmacion(String recipient, String key) {
-        String to = recipient;
+    /**
+     * Envia una correo al correo dado por el usuario para validarlo
+     * @param destino El correo al cual se le va a enviar el mensaje
+     * @param codig Llave unica para realizar la verificación
+     **/
+    private void enviarCorreoConfirmacion(String destino, String codig) {
+        String to = destino;
         final String username = "pumaskciencias@gmail.com";
         final String password = "pumask123";
         // Assuming you are sending email from localhost
@@ -176,20 +180,17 @@ public class ControladorRegistro {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("pumaskciencias@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(recipient));
+                    InternetAddress.parse(destino));
             message.setSubject("Validación cuenta pumask");
             message.setText("Copie y pegue el siguiente link en su navegador:"
-                    + "\n\n" + "localhost:8080/pumask/confirmarCuenta?key=" + key);
+                    + "\n\n" + "localhost:8080/pumask/confirmacionCorreo.xhtml?key=" + codig);
 
 
-			System.out.println("Enviamos el correo");
             Transport.send(message);
 
-            System.out.println("El correo se envio");
 
         } catch (MessagingException e) {
             System.out.println("Error");
-            //throw new RuntimeException(e);
         }
     }
 }

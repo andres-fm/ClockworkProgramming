@@ -1,0 +1,33 @@
+<ui:composition
+	template="/WEB-INF/facelets/templates/common.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+
+  <ui:define name="content">
+
+  <h:head>
+    <title>Validación correo</title>
+  </h:head>
+  <h:body>
+
+	<p:panel id="simple" header="Confirmación correo" >
+  	<h:form>
+  	<h:outputText value="El correo fue validado de forma exitosa" />
+	</h:form>
+	<h:form>
+  	<p:commandButton action="/index?faces-redirect=true" value="Volver a inicio" />
+  	</h:form>
+</p:panel>
+
+
+
+</h:body>
+
+</ui:define>
+
+</ui:composition>
