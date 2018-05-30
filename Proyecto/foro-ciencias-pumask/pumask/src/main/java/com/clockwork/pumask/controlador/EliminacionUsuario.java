@@ -82,6 +82,8 @@ public EliminacionUsuario() {
 		}
                 preguntaJpa.destroy(p.getIdPregunta());
             }
+            for(Respuesta r : us.getRespuestaCollection())
+            	respuestaJpa.destroy(r.getIdRespuesta());
             usuarioJpa.destroy(us.getCorreo());
             FacesContext.getCurrentInstance().addMessage(null
                       , new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuario eliminado exitosamente", ""));
