@@ -27,7 +27,7 @@
 				<p:column headerText="Preguntas">
 					<h:form>
    					<h:outputText value="#{pregunta.contenido}" />
-					<h:outputText value=", carrera: #{pregunta.carrera}" />
+					<h:outputText value=",  carrera: #{pregunta.carrera}" />
 					<p:commandButton action="#{agregacionPregunta.verRespuestas(pregunta.idPregunta)}" value="Ver Respuestas"/>
 					</h:form>
   				</p:column>
